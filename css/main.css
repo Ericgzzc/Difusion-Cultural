@@ -917,3 +917,19 @@ textarea {
 }
 
 
+#publicidad {
+	padding: 0px;
+    margin: 0 140px;
+	
+}
+.anuncios {
+	
+    display:block;
+    overflow: hidden;
+}
+.anuncios li{
+	list-style-type: none;
+	float:left;
+    padding: 0px 1px 20px 10px;
+    margin: 0px;
+}
