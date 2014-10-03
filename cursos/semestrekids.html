@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!--CSS-->
+	<link href="css/main.css" rel="stylesheet" type="text/css" />
+	<!--Javascripsts-->
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/bjqs-1.3.min.js"></script>
+	<script type="text/javascript" src="js/idtabs.min.js"></script>
+	<!--jQuery functions-->
+	<script tex="type/javascript">
+        jQuery(document).ready(function($) {
+          $('#slider').bjqs({
+            animtype      : 'slide',
+            height        : 400,
+            width         : 1060,
+            responsive    : false,
+            nexttext      : '',
+            prevtext      : ''
+          });
+        });
+    </script>
+
+	<title>Cursos DC | Semestre Kids</title>
+</head>
+<body class="semestrekids">
+	<div class="fixed">
+		<ul class="social right">
+	  		<li><a class="face" href="https://www.facebook.com/difusionculturaltecmty?fref=ts" target="_blank"></a></li>
+	  		<li><a class="tweet" href="https://twitter.com/intent/user?screen_name=tecdifucultural" target="_blank"></a></li>
+	  		<li class="last"><a class="youtube" href="https://www.youtube.com/user/TECDCMTY?feature=watch" target="_blank"></a></li>  
+	  	</ul>
+	 </div>
+	<header>
+		<div class="inner-940px">
+			<a href="../home.html" class="left" id="logodc"></a>
+			<a href="www.itesm.mx" target="_blank" class="right" id="logotec"></a>
+		</div>
+	</header>
+	<nav>
+		<div class="inner-940px">
+			<ul class="main left">
+  				<li><a class="principal" href="index.html">Principal</a></li>
+  				<li><a class="verano" href="verano.html">Verano Tec</a></li>
+  				<li><a class="semestre" href="semestre.html">Semestre Tec</a></li>
+  				<li><a class="veranokids" href="">Verano Kids</a></li> 
+  				<li><a class="semestrekids selected" href="semestrekids.html">Semestre Kids</a></li>
+  				<li class="contacto"><a class="contacto" href="contacto.html"></a></li>	
+  			</ul>
+  		</div>
+	</nav>
+	<script type="text/javascript">
+		jQuery(window).scroll(function() 
+			{
+				if(jQuery(window).scrollTop() > 160) {
+					jQuery("#subnav").addClass('fixeado');
+				}
+			else
+			{
+				jQuery("#subnav").removeClass('fixeado');
+			}
+		});
+	</script>
+	<nav id="subnav">
+		<div class="inner-940px">
+			<ul class="">
+				<li class="first"><h1>Semestre Kids Tec A-D 2013</h1></li>
+  				<li><a class="" href="semestrekids_artes.html"><span>Artes visuales</span></a></li>
+  				<li><a class="" href="semestrekids_danza.html"><span>Danza</span></a></li>
+  				
+  			</ul>
+  		</div>
+	</nav> 
+	<div id="main">
+		<div id="content">
+			<div class="slider">
+				<div id="slider">
+					 <ul class="bjqs">
+	          			<li>
+	          				<div class="">
+	          					<img class="left" src="images/misc/artes.jpg">
+	          					<h1>Artes visuales</h1>
+	          					<p>
+	          						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu enim arcu, ac pharetra purus. Nam faucibus, nisl eu porta placerat, sem tellus porttitor quam, lobortis tincidunt risus purus sit amet tellus. 
+	          					</p>
+	          					<a href="semestre_artes.html">Más información...</a>
+	          				</div>
+	          			</li>
+	          			<li>
+	          				<div class="">
+	          					<img class="left" src="images/misc/danza.jpg">
+	          					<h1>Danza</h1>
+	          					<p>
+	          						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu enim arcu, ac pharetra purus. Nam faucibus, nisl eu porta placerat, sem tellus porttitor quam, lobortis tincidunt risus purus sit amet tellus. 
+	          					</p>
+	          					<a href="semestre_danza.html">Más información...</a>
+	          				</div>
+	          			</li>
+	          				
+	       			 </ul>	
+	       		</div>
+			</div>
+			<div class="inner-940px programas">
+				<div class="title">
+					<h1>Proceso de inscripciones</h1>
+				</div>
+				<a class="semestrekids last" href="documents/programa_semestrekids.pdf">Semestre Kids <span>Descargar </span></a>
+				<div class="proceso">
+					
+					
+					<a class="" href="images/misc/cuentabanco.jpg">Cuentas bancarias</a>
+					<p>Para inscribir a tus hijos deberás consultar la oferta de cursos y realizar tu pago antes de 24 horas después de haberte inscrito. Lleva tu comprobante a Difusión Cultural, ubicado en el segundo piso del gimnasio Polivalente.</p>
+				</div>		
+			</div>
+			<div class="inner-940px programas last">
+				<div class="title">
+					<h1>Costos</h1>
+				</div>
+				<div class="costos">
+					<ul>	
+						<li><a class="selected" href="#empleados">Hijos de empleados</a></li>
+						<li><a class="" href="#exatec">Hijos de Ex-A-Tec</a></li>
+						<li><a class="" href="#externos">Externos</a></li>
+					</ul>
+					<div id="empleados">
+						<div>
+							<p>
+								Clases y Talleres 42 hrs./sem
+							</p>
+							<span>
+								$1,930.00
+							</span>
+						</div>
+  					</div>
+  					<div id="exatec">
+						<div>
+							<p>
+								Clases y Talleres 42 hrs./sem
+							</p>
+							<span>
+								$2,355.00 
+							</span>
+						</div>
+  					</div> 
+  					<div id="externos">
+						<div>
+							<p>
+								Clases y Talleres 42 hrs./sem
+							</p>
+							<span>
+								$3,330.00 
+							</span>
+						</div>
+  					</div> 
+					<p>
+						No hay semana de prueba, deberán inscribirse y asistir al taller seleccionado. Cambios de grupos únicamente del 12 al 16 de agosto de 2013, deberás acudir a Difusión Cultural y llenar una solicitud.
+					</p>
+				</div>
+				<script type="text/javascript"> 
+  					$(".costos ul").idTabs(); 
+				</script>
+			</div>
+		</div>
+	</div>
+</div>
+	</div>
+	<footer>
+		<div class="inner-940px">
+			<span class="left"></span>
+			<span class="right">Difusión Cultural Campus Monterrey Copyright 2013</span>
+		</div>
+	</footer>
+</body>
+</html>

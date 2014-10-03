@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!--CSS-->
+	<link href="css/main.css" rel="stylesheet" type="text/css" />
+	<link href="vendors/css/superfish.css" rel="stylesheet" type="text/css" />
+	<link href="vendors/css/superfish-navbar.css" rel="stylesheet" type="text/css" />
+	<link href="vendors/css/shadowbox.css" rel="stylesheet" type="text/css" />
+	<link href="vendors/css/ui/jquery.ui.tabs.css" rel="stylesheet" type="text/css" />
+	<!--Javascripsts-->
+	<script type="text/javascript" src="vendors/js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="vendors/js/superfish.js"></script>
+	<script type="text/javascript" src="vendors/js/shadowbox.js"></script>
+	<script type="text/javascript" src="vendors/js/ui/jquery.ui.core.min.js"></script>
+	<script type="text/javascript" src="vendors/js/ui/jquery.ui.widget.min.js"></script>
+	<script type="text/javascript" src="vendors/js/ui/jquery.ui.tabs.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+
+
+	<title>Cartelera | Difusión Cultural </title>
+</head>
+<body class="cartelera-ale">
+	<div class="fixed">
+		<ul class="social right">
+	  		<li><a class="face" href="https://www.facebook.com/difusionculturaltecmty?fref=ts" target="_blank"></a></li>
+	  		<li><a class="tweet" href="https://twitter.com/intent/user?screen_name=tecdifucultural" target="_blank"></a></li>
+	  		<li class="last"><a class="youtube" href="https://www.youtube.com/user/TECDCMTY?feature=watch" target="_blank"></a></li>  
+	  	</ul>
+	 </div>
+	<header>
+		<div class="inner-940px">
+			<a href="home.html" class="left" id="logodc"></a>
+			<a href="www.itesm.mx" target="_blank" class="right" id="logotec"></a>
+		</div>
+	</header>
+	<nav>
+		<div class="inner-940px">
+			<ul class="main sf-menu sf-navbar">
+  				<li><a class="" href="home.html">Principal</a></li>
+  				<li>
+  					<a class="selected" href="cartelera.html">Cartelera</a>
+  					<ul>
+  						<li>Consulta el programa de actividades de este semestre.</li>
+  					</ul>
+  				</li>
+  				<li>
+  					<a class="" href="actividades.html">Actividades representativas</a>
+  					<ul>
+  						<li>Aquí podrás consultar las fechas, requisitos para audicionar y todo lo relacionado con las actividades representativas.</li>
+  					</ul>
+  				</li>
+  				<li>
+  					<a class="" target="_blank" href="http://www.difucursos.com.mx">Cursos y Clubes musicales</a>
+  					<ul>
+  						<li>Consulta la oferta de Cursos y Clubes musicales del siguiente semestre.</li>
+  					</ul>
+  				</li>
+  				<li>
+  					<a class="" href="concursos.html">Concursos</a>
+  					<ul>
+  						<li>Si eres alumno del Campus podrás participar en: Monólogos, Baile, Creación Literaria y Festival de la Canción y música electrónica.</li>
+  					</ul>
+  				</li>
+  				<li>
+  					<a class="" href="#">Ffig</a>
+  					<ul>
+  						<li>Festival Internacional Folklórico Globalifílicos.</li>
+  					</ul>
+  				</li>
+  				<li>
+  					<a class="" href="met.html">MET</a>
+  					<ul>
+  						<li>Difusión Cultural presenta: En Vivo desde el MET. Consulta la cartelera.</li>
+  					</ul>
+  				</li>
+  				<li>
+  					<a class="" href="tours.html">Tours</a>
+  					<ul>
+  						<li>¿Quieres conocer el mundo trás bambalinas? Entra aquí y consulta las fechas de los recorridos en el Auditorio Luis Elizondo.</li>
+  					</ul>
+  				</li>
+  				<li><a class="" href="acerca.html">Quiénes somos</a></li>
+  				<li class="contacto"><a class="" href="contacto.html"></a></li> 
+  			</ul>
+  		</div>
+	</nav>
+	<script type="text/javascript">
+		jQuery(window).scroll(function() 
+			{
+				if(jQuery(window).scrollTop() > 530) {
+					jQuery("").addClass('fixedsubnav');
+				}
+			else
+			{
+				jQuery("").removeClass('fixedsubnav');
+			}
+		});
+	</script> 
+	
+	<div id="main">
+		<div id="content">
+			<div class="inner-940px banner">
+				<a class="video" rel="shadowbox;width=640;height=480;player=swf" href="http://www.youtube.com/v/YXyr2Vs2niw"></a> 
+				<img src="images/misc/cartelera.jpg">         
+			</div>
+			<div id="tabs" class="inner-940px acerca">
+				<h1>Cartelera <span>Semestre</span></h1>
+				<div class="calendario">
+					<div class="subnav">
+						<ul>
+							
+
+							<li><a href="#uno" class="">El enemigo del pueblo</a></li>
+							<li><a href="#dos" class="">Concierto Ensamble 41</a></li>
+							<li><a href="#tres" class="">Orquesta Sinfónica “Un concierto de película”</a></li>
+							<li><a href="#cuatro" class="">Coro de la Comunidad Las canciones de Disney</a></li>
+							<li><a href="#cinco" class="">Orquesta Sinfónica “Pixar en Concierto”</a></li>
+							<li><a href="#seis" class="">ContempoTec e Impetu Desde mi guitarra</a></li>
+							<li><a href="#siete" class="">Raíces 2014: Santo Patrono</a></li>
+							<li><a href="#ocho" class="">Coro de la Comunidad, Solistas y Orquesta Sinfónica"El hombre armado" </a></li>
+							<li><a href="#nueve" class="">Teatro con maestros: "Shakespeare a morir"</a></li>
+							<li><a href="#diez" class="">Teatro Musical: In the Heights</a></li>
+							
+							
+						</ul>
+					</div>
+				</div>	
+				
+				<div id="uno" class="article-cnt">
+					<div class="article last">
+						<h2>El enemigo del pueblo</h2>
+						<img src="images/stages/stage_07.jpg" width="280" height="150" class="left" alt="El enemigo del pueblo">
+						REPOSICIÓN	
+						<p class="">
+							<span>
+								16 y 17 de agosto
+							</span>
+							La lucha del individuo contra la sociedad corrupta; la defensa de la libertad de expresión y la honestidad frente a los intereses económicos son algunos de los valores que el autor noruego expresa en su obra cumbre, que a pesar de haber sido escrita a finales del S. XIX sigue siendo vigente. Esta producción tuvo un éxito inusitado el semestre pasado, rompiendo record de asistencia.
+						</p>
+
+						<h3>Ubicación</h3>
+						Auditorio Luis Elizondo
+						<div class="ubicacion">
+							<iframe src="mapa_ale.html"></iframe> 
+						</div>
+					</div>
+				</div>
+				<div id="dos" class="article-cnt">
+					<div class="article last">
+						<h2>Concierto Ensamble 41</h2>
+						<img src="images/stages/stage_20.jpg" width="280" height="150" class="left" alt="Concierto Ensamble 41”">
+						REPOSICIÓN
+						<p class="">
+
+							<span>
+								22, 23 y 24 de agosto
+							</span>
+							Los cantantes solistas y el conjunto musical que integra este prestigiado grupo, interpretarán de una forma creativa y acorde a su estilo, éxitos del artista latinoamericano más destacado internacionalmente en la actualidad: Ricky Martin. Este concierto, es una fiesta que además del canto, incluye coreografías, un DJ, y un espectacular diseño de iluminación. Este concierto, es una fiesta que además del canto, incluye coreografías, un DJ, y un espectacular diseño de iluminación.
+						</p>
+						<!--
+						<h3>Funciones</h3>
+						<ul class="border">
+							<li><span>Día</span></li>
+							<li><span>Hora</span></li>
+						</ul>
+						<ul>
+							<li>15 de agosto</li>
+							<li>Noche Cultural Egresados</li>
+						</ul>
+						<ul>
+							<li>17 de agosto</li>
+							<li>20:00 horas</li>
+						</ul>
+						<ul>
+							<li>18 de agosto</li>
+							<li>16:00 horas</li>
+						</ul>
+						<ul class="border">
+							<li>18 de agosto</li>
+							<li>19:00 horas</li>
+						</ul>
+						-->
+						<h3>Créditos</h3>
+						<ul class="border">
+							<li><span>Crédito</span></li>
+							<li><span>Nombre</span></li>
+						</ul>
+						<ul>
+							<li>Dirección general</li>
+							<li>Hugo Garza Leal</li>
+						</ul>
+						<ul>
+							<li>Dirección Coreográfica</li>
+							<li>Miguel Sahagún</li>
+						</ul>
+						<ul>
+							<li>Dirección Musical y de Coros</li>
+							<li>Guillermo Palacios</li>
+						</ul>
+						<ul>
+							<li>Producción Ejecutiva</li>
+							<li>Federico Sabre</li>
+						</ul>
+						<ul>
+							<li>Diseño de Escenografía</li>
+							<li>David Molina</li>
+						</ul>
+						<ul>
+							<li>Diseño y Realización de Vestuario</li>
+							<li>Alain Garres</li>
+						</ul>
+						<ul>
+							<li>Diseño de Audio</li>
+							<li>Enrique Rodríguez</li>
+						</ul>
+						<ul class="border">
+							<li>Diseño de Iluminación</li>
+							<li>Rubén Torres</li>
+						</ul>
+
+						<h3>Boletos</h3>
+						<ul class="border triple">
+							<li><span>Persona</span></li>
+							<li><span>Lugar</span></li>
+							<li><span>Precio</span></li>
+						</ul>
+						<ul class="triple">
+							<li>Externos</li>
+							<li>Orquesta</li>
+							<li>$105.00</li>
+						</ul>
+						<ul class="triple">
+							<li>Externos</li>
+							<li>Luneta</li>
+							<li>$90.00</li>
+						</ul>
+						<ul class="border triple">
+							<li>Alumnos</li>
+							<li>Orquesta y Luneta</li>
+							<li>$65.00</li>
+						</ul>
+						<ul class="border triple">
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+
+						<h3>Ubicación</h3>
+						Auditorio Luis Elizondo
+						<div class="ubicacion">
+							<iframe src="mapa_ale.html"></iframe> 
+						</div>
+						<h3>Galeria</h3>
+						<ul class="galeria">
+							<li class="first">
+								<a href="images/galery/ensamble/e41_02.jpg" rel="shadowbox[ensamble]" title="">
+									<img src="images/galery/ensamble/e41_02.jpg" width="600" height="400" alt="" />
+								</a>
+							</li>
+							<li class="">
+								<a href="images/galery/ensamble/e41_01.jpg" rel="shadowbox[ensamble]" title="">
+									<img src="images/galery/ensamble/e41_01.jpg" width="190" height="190" alt="" />
+								</a>
+							</li>
+							<li class="">
+								<a href="images/galery/ensamble/e41_03.jpg" rel="shadowbox[ensamble]" title="">
+									<img src="images/galery/ensamble/e41_03.jpg" width="190" height="190" alt="" />
+								</a>
+							</li>
+							<li class="last">
+								<a href="images/galery/ensamble/e41_04.jpg" rel="shadowbox[ensamble]" title="">
+									<img src="images/galery/ensamble/e41_04.jpg" width="190" height="190" alt="" />
+								</a>
+							</li>
+							
+
+							<li >
+								<a href="images/galery/ensamble/e41_05.jpg" rel="shadowbox[ensamble]" title="">
+									<img src="images/galery/ensamble/e41_05.jpg" width="190" height="190" alt="" />
+								</a>
+							</li>
+							<li >
+								<a href="images/galery/ensamble/e41_06.jpg" rel="shadowbox[ensamble]" title="">
+									<img src="images/galery/ensamble/e41_06.jpg" width="190" height="190" alt="" />
+								</a>
+							</li>
+						</ul>
+						</br></br>
+					</div>
+				</div>
+				
+				
+				<div id="tres" class="article-cnt">
+					<div class="article last">
+						<h2>Orquesta Sinfónica Juvenil del Tecnológico “Un concierto de película”</h2>
+						<img src="images/misc/pelicula.jpg" width="280" height="150" class="left" alt="Orquesta Sinfónica Juvenil del Tecnológico “Un concierto de película”">
+						REPOSICIÓN 
+						<p class=""> 
+							<span>
+								29 y 31 de Agosto	
+							</span>
+							Un programa por demás atractivo y “comercial”, en el buen sentido de la palabra, en donde se abordarán temas musicales compuestos para el cine como Harry Potter por John Williams;  Batman  por Hans Zimmer,  El hombre araña por Danny Elfman, entre otras.
+							Este concierto, en su temporada de estreno el semestre pasado, tuvo localidades agotadas ya que resultó muy atractivo para los fans de músicas de películas y para los seguidos de los súper héroe.
+						</p>
+
+						<h3>Ubicación</h3>
+						<div class="ubicacion">
+							Auditorio Luis Elizondo
+							<iframe src="mapa_ale.html"></iframe> 
+						</div>
+					</div>
+				</div>
+				<div id="cuatro" class="article-cnt">
+					<div class="article last">
+						<h2>Coro de la Comunidad Las canciones de Disney</h2>
+						<img src="images/misc/coro_2.jpg" width="280" height="150" class="left" alt="Coro de la Comunidad Las canciones de Disney">
+						<p class="">
+							<span>
+								30 de Agosto
+							</span>
+							Un programa especialmente diseñado para público familiar con las canciones más entrañables del repertorio de Disney que este semestre se interpretarán en su versión en español. Y habiendo tenido 2 funciones con sobrecupo el semestre anterior en Sala Mayor, nos lo traemos al Auditorio Luis Elizondo.
+						</p>
+
+						<h3>Ubicación</h3>
+						Auditorio Luis Elizondo
+						<div class="ubicacion">
+							<iframe src="mapa_ale.html"></iframe> 
+						</div>
+					</div>
+				</div>
+				<div id="cinco" class="article-cnt">
+					
+					<div class="article last">
+						<h2>Orquesta Sinfónica Juvenil del Tecnológico “Pixar en Concierto”</h2>
+						
+						ESTRENO
+						<p class="">
+							<span>
+								5,6 y 7 de Septiembre
+							</span>
+							Gracias al éxito y al interés que ha despertado la Orquesta Sinfónica Juvenil del Tecnológico de Monterrey en sus recientes presentaciones, ha sido invitada a colaborar en “Pixar en Concierto” que se realizará en el auditorio Banamex con un despliegue de tecnología característica de estos estudios, líderes en el ramo de la animación.
+
+						</p>
+
+						<h3>Ubicación</h3>
+						Auditorio Banamex
+						<div class="ubicacion">
+							<iframe src="mapa_banamex.html"></iframe> 
+						</div>
+					</div>
+				</div>
+				<div id="seis" class="article-cnt">
+					<div class="article last">
+						<h2>ContempoTec e Impetu "Desde mi guitarra"</h2>
+						<img src="images/stages/stage_guitarra.jpg" width="280" height="150" class="left" alt="Desde mi guitarra">
+						RESPOSICIÓN
+						<p class="">
+							<span>
+								6 y 7 de Septiembre
+							</span>
+							Los grupos representativos de danza del Tec de Monterrey: ContempoTec e Impetú, unen fuerzas para presentar un espectáculo en dos actos donde el sonido de la guitarra es el hilo conductor.
+						</p>
+
+						<h3>Ubicación</h3>
+						Auditorio Luis Elizondo
+						<div class="ubicacion">
+							<iframe src="mapa_ale.html"></iframe> 
+						</div>
+					</div>
+				</div>
+				<div id="siete" class="article-cnt">
+					<div class="article last">
+						<h2>Raíces 2014: Santo Patrono</h2>
+							<img src="images/stages/stage_19.jpg" width="280" height="150" class="left" alt="Raices Santo Patrono">
+							RESPOSICIÓN
+							<p class="">
+								<span>
+									26 al 28 de Septiembre
+								</span>
+								Este año que Brasil es el tema en los medios, hicimos una selección de las fiestas patronales más destacadas y coloridas de México y Brasil, considerados de los países más fervientes de América, donde lo Sacro y lo Profano se fusionan sin culpa alguna.
+								Momentos de tal recogimiento como la Fiesta de la Virgen de la soledad en Oaxaca y de algarabía como las Fiestas de la Virgen de la candelaria de Tlacotlalpan, contrastan con el exotismo y exuberancia de las de Río Grande do Norte dedicadas a San Juan y otros santos que se celebran en el mes de junio y las de Río de Janeiro, dedicadas al Dios Shango.
+
+							</p>
+
+							<h3>Ubicación</h3>
+							Auditorio Luis Elizondo
+							<div class="ubicacion">
+								<iframe src="mapa_ale.html"></iframe> 
+							</div>
+					</div>
+				</div>
+				<div id="ocho" class="article-cnt">
+					<div class="article last">
+						<h2>Coro de la Comunidad, Solistas y Orquesta Sinfónica Juvenil del Tecnológico "El hombre armado"</h2>
+						<img src="images/stages/stage_elhombre.jpg" width="280" height="150" class="left" alt="El hombre armado">
+						ESTRENO
+						<p class="">
+							<span>
+								22 y 26 de Octubre
+							</span>
+							El Coro de la Comunidad, Solistas y Orquesta Sinfónica Juvenil del Tecnológico y los de la Universidad de Montemorelos unen fuerzas por primera ocasión para interpretar esta obra contemporánea del compositor británico Karl Jerkings, reconocido por esta creación monumental en el mundo entero.
+						</p>
+
+						<h3>Ubicación</h3>
+						Auditorio Luis Elizondo
+						<div class="ubicacion">
+							<iframe src="mapa_ale.html"></iframe> 
+						</div>
+					</div>
+				</div>
+				<div id="nueve" class="article-cnt">
+					<div class="article last">
+						<h2>Teatro con maestros: "Shakespeare a morir"</h2>
+						<img src="images/stages/stage_shakespeare.jpg" width="280" height="150" class="left" alt="Shakespeare a morir">
+						ESTRENO
+						<p class="">
+							<span>
+								31 de Octubre, 1 y 2 de Noviembre
+							</span>
+							Para celebrar 450 años del natalicio de Shakespeare, la compañia de Teatro de MAestros y profesionistas de apoyo, presentarán Shakespeare a morir, una antologia de escenas de las obras mas destacas del autor, teninedo como escenario el Jardin de las Carreras.
+							
+						</p>
+
+						<h3>Ubicación</h3>
+						Jardin de las Carreras
+						<div class="ubicacion">
+							<iframe src="mapa_ale.html"></iframe> 
+						</div>
+					</div>
+				</div>
+				<div id="diez" class="article-cnt">
+					<div class="article last">
+						<h2>Teatro Musical: In the Heights</h2>
+						<img src="images/stages/stage_ith.jpg" width="280" height="150" class="left" alt="In the Heights">
+						ESTRENO
+						<p class="">
+							<span>
+								7 al 9 de Noviembre
+							</span>
+							Esta comedia ganadora de 4 premios Tony en el 2008, entre ellos el de mejor musical, se presentará por primera vez en México y con una adaptación especial en español.
+							Los ritmos caribeños tradicionales se mezclan con el rap en una propuesta vibrante con mezclas de salsa, conga y hip hop.
+							In the heights es una historia de superación ante la adversidad con momentos emotivos y plagada de momentos divertidos, que sucede en barrio Washington Heights en Nueva York.
+							Todavía puedes formar parte del reparto!
+
+						</p>
+
+						<h3>Ubicación</h3>
+						Auditorio Luis Elizondo
+						<div class="ubicacion">
+							<iframe src="mapa_ale.html"></iframe> 
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="inner-940px">
+			<span class="left">Difusión Cultural Campus Monterrey Copyright 2013</span>
+			<span class="right bluemilk">Desarrollado por</span>
+		</div>
+	</div>
+</body>
+</html>
+<!--jQuery functions-->
+
+	
+	<script type="text/javascript"> 
+		Shadowbox.init({ language: 'en', players: ['img', 'html', 'iframe', 'qt', 'wmp', 'swf', 'flv'] }); 
+	</script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {	
+			jQuery('ul.sf-menu').superfish({	
+		 		speed:       1,
+		 		autoArrows:    false,
+		 		cssArrows: false,
+		 		speedOut:      'normal',
+		 		delay:         200   
+			});
+		});
+	</script>
+    <script type="text/javascript">
+		$("#tabs").tabs({ 
+			active: 6,
+			show: { effect: "blind", duration: 800 }
+		});
+		// Function added to help reset map and container boundaries
+	 
+		
+
+
+	</script>

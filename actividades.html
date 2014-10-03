@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!--CSS-->
+	<link href="css/main.css" rel="stylesheet" type="text/css" />
+	<link href="vendors/css/superfish.css" rel="stylesheet" type="text/css" />
+	<link href="vendors/css/superfish-navbar.css" rel="stylesheet" type="text/css" />
+	<link href="vendors/css/shadowbox.css" rel="stylesheet" type="text/css" />
+	<link href="vendors/css/ui/jquery.ui.tabs.css" rel="stylesheet" type="text/css" />
+
+	<!--Javascripsts-->
+	<script type="text/javascript" src="vendors/js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="vendors/js/superfish.js"></script>
+	<script type="text/javascript" src="vendors/js/shadowbox.js"></script>
+	<script type="text/javascript" src="vendors/js/ui/jquery.ui.core.min.js"></script>
+	<script type="text/javascript" src="vendors/js/ui/jquery.ui.widget.min.js"></script>
+	<script type="text/javascript" src="vendors/js/ui/jquery.ui.tabs.min.js"></script>
+
+
+	<title>Actividades Representativas | Difusión Cultural </title>
+</head>
+<body class="">
+	<div class="fixed">
+		<ul class="social right">
+	  		<li><a class="face" href="https://www.facebook.com/difusionculturaltecmty?fref=ts" target="_blank"></a></li>
+	  		<li><a class="tweet" href="https://twitter.com/intent/user?screen_name=tecdifucultural" target="_blank"></a></li>
+	  		<li class="last"><a class="youtube" href="https://www.youtube.com/user/TECDCMTY?feature=watch" target="_blank"></a></li>  
+	  	</ul>
+	 </div>
+	<header>
+		<div class="inner-940px">
+			<a href="home.html" class="left" id="logodc"></a>
+			<a href="www.itesm.mx" target="_blank" class="right" id="logotec"></a>
+		</div>
+	</header>
+	<nav>
+		<div class="inner-940px">
+			<ul class="main sf-menu sf-navbar">
+  				<li><a class="" href="home.html">Principal</a></li>
+  				<li>
+  					<a class="" href="cartelera.html">Cartelera</a>
+  					<ul>
+  						<li>Consulta el programa de actividades de este semestre.</li>
+  					</ul>
+  				</li>
+  				<li>
+  					<a class="selected" href="actividades.html">Actividades representativas</a>
+  					<ul>
+  						<li>Aquí podrás consultar las fechas, requisitos para audicionar y todo lo relacionado con las actividades representativas.</li>
+  					</ul>
+  				</li>
+  				<li>
+  					<a class="" target="_blank" href="http://www.difucursos.com.mx">Cursos y Clubes musicales</a>
+  					<ul>
+  						<li>Consulta la oferta de Cursos y Clubes musicales del siguiente semestre.</li>
+  					</ul>
+  				</li>
+  				<li>
+  					<a class="" href="concursos.html">Concursos</a>
+  					<ul>
+  						<li>Si eres alumno del Campus podrás participar en: Monólogos, Baile, Creación Literaria y Festival de la Canción y música electrónica.</li>
+  					</ul>
+  				</li>
+  				<li>
+  					<a class="" href="#">Ffig</a>
+  					<ul>
+  						<li>Festival Internacional Folklórico Globalifílicos.</li>
+  					</ul>
+  				</li>
+  				<li>
+  					<a class="" href="met.html">MET</a>
+  					<ul>
+  						<li>Difusión Cultural presenta: En Vivo desde el MET. Consulta la cartelera.</li>
+  					</ul>
+  				</li>
+  				<li>
+  					<a class="" href="tours.html">Tours</a>
+  					<ul>
+  						<li>¿Quieres conocer el mundo trás bambalinas? Entra aquí y consulta las fechas de los recorridos en el Auditorio Luis Elizondo.</li>
+  					</ul>
+  				</li>
+  				<li><a class="" href="acerca.html">Quiénes somos</a></li>
+  				<li class="contacto"><a class="" href="contacto.html"></a></li> 
+  			</ul>
+  		</div>
+	</nav>
+	<script type="text/javascript">
+		jQuery(window).scroll(function() 
+			{
+				if(jQuery(window).scrollTop() > 530) {
+					jQuery(".subnav").addClass('fixedsubnav');
+				}
+			else
+			{
+				jQuery(".subnav").removeClass('fixedsubnav');
+			}
+		});
+	</script> 
+	
+	<div id="main">
+		<div id="content">
+			<div class="inner-940px banner">
+				<img src="images/misc/actividades.jpg">
+			</div>
+			<div id="tabs" class="inner-940px acerca">
+				<h1>Actividades <span>Representativas</span></h1>
+				<div class="calendario">
+					<div class="subnav">
+						<ul>
+							<li><a href="#banda" class="selected">Banda Sonido Azul</a></li>
+							<li><a href="#contempo" class="">Compañía de Danza Contemporánea</a></li>
+							<li><a href="#ensamble" class="">Concierto Ensamble</a></li>
+							<li><a href="#coro" class="">Coro de la Comunidad</a></li>
+							<li><a href="#jazz" class="">Jazz Team Tec</a></li>
+							<li><a href="#raices" class="">Raíces</a></li>
+							<li><a href="#requiem" class="">Réquiem y Compresencias</a></li>
+							<li><a href="#revista" class="">Revista musical</a></li>
+							<li><a href="#staff" class="">STAFF</a></li>
+							<li><a href="#sintec" class="">SINTEC</a></li>
+							<li><a href="#teatro" class="">Teatro (cuatro ciclos)</a></li>
+						</ul>
+					</div>
+				</div>
+				<div id="banda" class="article-cnt">
+					<div class="article last ">
+						<h2>Banda Sonido Azul</h2>
+						<img src="images/misc/banda.jpg" width="280" height="150" class="left" alt="Erika Garza. Ensamble 40.">
+						<p class="">
+							
+							La Banda Sonido Azul se crea en 2009 como un medio para ampliar el público que pueda disfrutar del talento estudiantil uniéndose a la gran tradición deportiva del campus, la cual en los últimos años ha llegado a los más altos niveles tanto nacional como internacionalmente.
+							</br></br>
+							A la par que los integrantes consolidan la calidad musical del conjunto, también desarrollan una serie de rutinas de formaciones en marcha al estilo de las vistosas evoluciones de las bandas universitarias norteamericanas.
+						</p>
+
+						<h3>¿Quiénes participan?</h3>
+						<p> 
+							Alumnos de carrera, prepa y postgrado, además se invita a alumnos candidatos a ingresar al Tec Campus Monterrey que tengan un nivel principiante, intermedio o avanzado como ejecutantes de instrumentos de aliento (metales y maderas) así como percusiones (no afinados y afinados).</br></br>
+							La Banda cuenta con una dotación de 49 instrumentos: 4 flautas, 1 oboe, 5 clarinetes, 3 sax alto, 3 sax tenor, 1 sax barítono, 5 trompetas, 5 trombones, 3 cornos franceses, 3 sausófonos, 3 xilófonos, 3 toms tenor, 3 bombos, 4 tarolas y 2 platillos de choque por el momento, pero en cuanto se requieran aumentará su activo a 100 instrumentos.
+						</p>
+
+						<h3>¿Cómo participar?</h3>
+						<p>  
+							Solicitando una audición con la asistente de producción a través de un correo electrónico. Las audiciones se llevan a cabo los primeros días de cada semestre.  Deberás llevar dos fotografías y llenar una ficha de datos que se entregará en ese momento.
+						</p>
+						<h3>Becas Prepa Tec</h3>
+						<p>  
+							La vicerectoría de Enseñanza Media ha otorgado becas para candidatos de alto nivel de ejecución.
+						</p>
+						<h3>Ensayos</h3>
+						<p>  
+							Los ensayos y presentaciones de la Banda se realizan de la siguiente manera:
+						</p>
+						<ul class="descripcion">
+							<li>
+								<span>
+									Lunes y viernes de 16:00 a 20:00 H
+								</span>
+							</li>
+							<li>
+								<span>
+									Lugar: Casa Cultural Altavista / Ingreso : Audición con director
+								</span>
+							</li>
+							<li>
+								<span>
+									Requisitos: Tocar algún instrumento de aliento, percusión o piano.
+								</span>
+							</li>
+						</ul>
+						<h3>Galeria</h3>
+						<ul class="galeria">
+							<li class="first">
+								<a href="images/galery/banda/banda_01.jpg" rel="shadowbox[banda]" title="">
+									<img src="images/galery/banda/banda_01.jpg" width="600" height="400" alt="" />
+								</a>
+							</li>
+							<li class="">
+								<a href="images/galery/banda/banda_02.jpg" rel="shadowbox[banda]" title="">
+									<img src="images/galery/banda/banda_02.jpg" width="190" height="190" alt="" />
+								</a>
+							</li>
+							<li>
+								<a href="images/galery/banda/banda_03.jpg" rel="shadowbox[banda]" title="">
+									<img src="images/galery/banda/banda_03.jpg" width="190" height="190" alt="" />
+								</a>
+							</li>
+							<li>
+								<a class="hide" href="images/galery/banda/banda_05.jpg" rel="shadowbox[banda]" title="">
+									<img src="images/galery/banda/banda_05.jpg" width="190" height="190" alt="" />
+								</a>
+							</li>
+							<li>
+								<a class="hide" href="images/galery/banda/banda_06.jpg" rel="shadowbox[banda]" title="">
+									<img src="images/galery/banda/banda_05.jpg" width="190" height="190" alt="" />
+								</a>
+							</li>
+							<li>
+								<a class="hide" href="images/galery/banda/banda_07.jpg" rel="shadowbox[banda]" title="">
+									<img src="images/galery/banda/banda_05.jpg" width="190" height="190" alt="" />
+								</a>
+							</li>
+							<li class="last">
+								<a href="images/galery/banda/banda_04.jpg" rel="shadowbox[banda]" title="">
+									<img src="images/galery/banda/banda_04.jpg" width="190" height="190" alt="" />
+								</a>
+							</li>
+						</ul>
+						</br></br>
+
+						<h3>Mayores informes</h3> 
+						<p> 
+							Comunicarse con Francisco Quiñones, Director Musical de la Banda Sonido Azul al correo: <a href="mailto:panchitoq@itesm.mx">panchitoq@itesm.mx</a> 
+						</p>
+					</div>
+				</div>
+				<div id="contempo" class="article-cnt">
+					<div class="article last ">
+						<h2>Compañía de Danza Contemporánea</h2>
+						<img src="images/misc/contempo.jpg" width="280" height="150" class="left" alt="Erika Garza. Ensamble 40.">
+						<p class="">
+							<span>
+								"Próximamente"
+							</span>
+							
+							Próximamente.
+						</p>
+					</div>
+				</div>
+
+			<div id="ensamble" class="article-cnt">
+					<div class="article last">
+						<h2>Concierto Ensamble</h2>
+						<img src="images/misc/ensamble.jpg" width="280" height="150" class="left" alt="Erika Garza. Ensamble 40.">
+						<p class="">
+							
+							
+							En 1972 se estrenó la Revista Musical “Más guerra por favor”, sin embargo buscando aprovechar el entusiasmo y talento de los músicos y cantantes que intervenían, se creó en 1973 el  “Concierto Ensamble”. A 41 años de su nacimiento, este espectáculo sigue contando con gran reconocimiento en Monterrey y algunas ciudades del país.
+							<br><br><br>
+						</p>
+
+						<h3>Proceso de audición para cantantes</h3>
+						<p>
+							Para realizar la audición de cantantes, se solicita que el interesado se presente en la fechay hora acordada con la pista de la canción de su elección (en CD, no en mp3). Las audiciones se realizan en dos etapas: la primera es abierta para todos los interesados y de ésta se hace una selección en donde se cita a los finalistas a una segunda fase. El número de cantantes seleccionados varía entre 20 personas.
+						</p>
+
+						<h3>Proceso de audición para músicos</h3>
+						<p>
+							Las audiciones para músicos se hacen por cita con el director de orquesta, de acuerdo a la cantidad de alumnos interesados, es el tiempo que llevará la selección. Los músicos se presentan con su instrumento (bajo, guitarra, teclado, instrumentos de aliento o cuerda) y hacen una demostración. En el caso de la batería o percusiones serán proporcionadas por el Departamento. El número de músicos seleccionados dependerán del arreglo musical planeado para la producción en turno.
+						</p>
+
+						<h3>Resultados</h3>
+						<p>
+							Se notificarán vía correo electrónico y en los corchos del Departamento.
+						</p>
+
+						<h3>Elección de tema y repertorio</h3>
+						<p>
+							El proceso de elección del tema y la música de cada edición del Concierto Ensamble es responsabilidad del director, el productor y los maestros que colaboran dentro del proyecto, sin embargo los alumnos también pueden hacer propuestas en los tiempos oficiales.
+						</p>
+
+						<h3>Ensayos y presentaciones</h3>
+						<ul class="descripcion">
+							<li>
+								<span>
+									Los ensayos de coro se llevan a cabo a lo largo del semestre, de lunes a viernes de 13:30 a 15:00 H en Casa Cultural Altavista, además de ser citados a horas específicas.
+								</span>
+							</li>
+							<li>
+								<span>
+									Los ensayos de baile se llevan a cabo a lo largo del semestre, dos veces por semana de 20:00 a 21:30 H lunes y miércoles en academia de Miguel Sahagún.
+								</span>
+							</li>
+							<li>
+								<span>
+									Los sábados se va ensamblando la parte vocal y coreográfica con la instrumental en horarios de 10:00 a 14:00 H (variable).
+								</span>
+							</li>
+							<li>
+								<span>
+									Las semanas previas a la presentación se extienden los ensayos a los fines de semana.
+								</span>
+							</li>
+						</ul>
+						<p>
+							Durante la semana de presentaciones, los horarios son de la siguiente manera:
+						</p>
+						<ul class="descripcion">
+							<li>
+								<span>
+									Lunes sonorización de músicos y cantantes
+								</span>
+							</li>
+							<li>
+								<span>
+									Martes ensayo técnico 1er. Acto / 18:30 H a 22:00 H.
+								</span>
+							</li>
+							<li>
+								<span>
+									Miércoles ensayo técnico 2do. Acto / 18:30 H a 22:00 H.
+								</span>
+							</li>
+							<li>
+								<span>
+									Jueves ensayo general con público / 18:30 H a 22:00 H.
+								</span>
+							</li>
+						</ul>
+						<p>
+							Las presentaciones se realizan en el Auditorio Luis Elizondo los días:
+						</p>
+						<ul class="descripcion">
+							<li>
+								<span>
+									Viernes 20:00 H.
+								</span>
+							</li>
+							<li>
+								<span>
+									Sábado 20:00 H.
+								</span>
+							</li>
+							<li>
+								<span>
+									Domingo 16:00 y 19:00 H.
+								</span>
+							</li>
+						</ul>
+						<p>
+							Estos horarios pueden variar en caso de tener alguna presentación especial. También cabe la posibilidad de aceptar invitaciones para realizar presentaciones extras ya sea en Monterrey o fuera de la ciudad. Cada edición del Concierto Ensamble tiene una temporada de estreno (semestre enero-mayo) y otra reposición (semestre agosto-diciembre), cambiando así de tema y contenido, una vez al año.
+						</p>
+						<h3>Galeria</h3>
+						<ul class="galeria">
+							<li class="first">
+								<a href="images/galery/ensamble/ensamble_06.jpg" rel="shadowbox[ensamble]" title="">
+									<img src="images/galery/ensamble/ensamble_06.jpg" width="600" height="400" alt="" />
+								</a>
+							</li>
+							<li class="">
+								<a href="images/galery/ensamble/ensamble_05.jpg" rel="shadowbox[ensamble]" title="">
+									<img src="images/galery/ensamble/ensamble_05.jpg" width="190" height="190" alt="" />
+								</a>
+							</li>
+							<li class="">
+								<a href="images/galery/ensamble/ensamble_39.jpg" rel="shadowbox[ensamble]" title="">
+									<img src="images/galery/ensamble/ensamble_39.jpg" width="190" height="190" alt="" />
+								</a>
+							</li>
+							
+
+							<li class="last">
+								<a href="images/galery/ensamble/ensamble_03.jpg" rel="shadowbox[ensamble]" title="">
+									<img src="images/galery/ensamble/ensamble_03.jpg" width="190" height="190" alt="" />
+								</a>
+							</li>
+						</ul>
+						</br></br>
+
+						<h3>Mayores informes</h3> 
+						<p> 
+							Comunicarse con Federico Sabre, Productor ejecutivo del Concierto Ensamble al correo: <a href="mailto:federico.sabre@itesm.mx">federico.sabre@itesm.mx</a> ó al teléfono 83 58 20 00 Ext. 3528  
+						</p>
+					</div>
+				</div>	
+			<div id="coro" class="article-cnt">
+					<div class="article last">
+						<h2>Coro de la Comunidad</h2>
+						<img src="images/misc/coro.jpg" width="280" height="150" class="left" alt="Erika Garza. Ensamble 40.">
+						<p class="">
+							
+							Hace alrededor de 15 años se forma el Coro de Cámara del Tec, en el que participaban sólo alumnos del Campus Monterrey y en el que se abordaba música de corte clásico y popular, haciendo sus presentaciones en Sala Mayor de Rectoría. Con el paso del tiempo,  más alumnos se han interesado en participar en este grupo, logrando conjuntar a más de 50 elementos. </br></br>
+
+							El coro ha adquirido fuerza y en la actualidad es un grupo que se nutre en su mayoría por alumnos  del Instituto, quienes presentan conciertos de música que van desde lo popular hasta ópera y oratorios.
+						</p>
+						<p>
+							Los ensayos y presentaciones del Coro de la Comunidad se realizan de la siguiente manera:
+							Ensayos:
+						</p>
+						<ul class="descripcion">
+							<li>
+								<span>
+									De 19:30 a 21:30 hrs. Martes y Jueves en la Casa Cultural Altavista.
+								</span>
+							</li>
+							<li>
+								<span>
+									Domingos de 11 a 13:00 hrs. en el salón de ensayos de la Orquesta. 
+								</span>
+							</li>
+							<li>
+								<span>
+									Domingos de 11 a 13:00 hrs. en el salón de ensayos de la Orquesta.
+								</span>
+							</li>
+						</ul>
+						<p>
+							Ensayos generales son en la semana del evento:
+						</p>
+						<ul class="descripcion">
+							<li>
+								<span>
+									Miércoles y jueves en la noche de 18:30 a 21:30 hrs.
+								</span>
+							</li>
+						</ul>
+						<p>
+							Los conciertos se presentan en el Auditorio Luis Elizondo. Este grupo tiene temporada de estreno y reposición en cada semestre.
+							</br></br>
+							El Coro de la Comunidad del Tec y la Sinfónica Juvenil, participan desde hace varios años en las ceremonias de graduación de la Rectoría de la Zona Metropolitana de Monterrey, eventos considerados de los más importantes para el Tecnológico.
+						</p>
+						<h3>Galeria</h3>
+						<ul class="galeria">
+							<li class="first">
+								<a href="images/galery/coro/coro_08.jpg" rel="shadowbox[coro]" title="">
+									<img src="images/galery/coro/coro_08.jpg" width="600" height="400" alt="" />
+								</a>
+							</li>
+							<li class="">
+								<a href="images/galery/coro/coro_07.jpg" rel="shadowbox[coro]" title="">
+									<img src="images/galery/coro/coro_07.jpg" width="190" height="190" alt="" />
+								</a>
+							</li>
+							<li>
+								<a href="images/galery/coro/coro_06.jpg" rel="shadowbox[coro]" title="">
+									<img src="images/galery/coro/coro_06.jpg" width="190" height="190" alt="" />
+								</a>
+							</li>
+							<li>
+								<a class="hide" href="images/galery/coro/coro_04.jpg" rel="shadowbox[coro]" title="">
+									<img src="images/galery/coro/coro_04.jpg" width="190" height="190" alt="" />
+								</a>
+							</li>
+							<li>
+								<a class="hide" href="images/galery/coro/coro_03.jpg" rel="shadowbox[coro]" title="">
+									<img src="images/galery/coro/coro_03.jpg" width="190" height="190" alt="" />
+								</a>
+							</li>
+							<li>
+								<a class="hide" href="images/galery/coro/coro_02.jpg" rel="shadowbox[coro]" title="">
+									<img src="images/galery/coro/coro_02.jpg" width="190" height="190" alt="" />
+								</a>
+							</li>
+							<li>
+								<a class="hide" href="images/galery/coro/coro_01.jpg" rel="shadowbox[coro]" title="">
+									<img src="images/galery/coro/coro_01.jpg" width="190" height="190" alt="" />
+								</a>
+							</li>
+
+							<li class="last">
+								<a href="images/galery/coro/coro_05.jpg" rel="shadowbox[coro]" title="">
+									<img src="images/galery/coro/coro_05.jpg" width="190" height="190" alt="" />
+								</a>
+							</li>
+						</ul>
+						</br></br>
+						<h3>Mayores informes</h3> 
+						<p> 
+							Comunicarse con Letycia Uresti, Productora ejecutiva de los eventos de la Orquesta Sinfónica Juvenil y del Coro de la Comunidad del Tecnológico de Monterrey a los correos: <a href="mailto:letyuresti@itesm.mx">letyuresti@itesm.mx</a> y <a href="mailto:letyuresti@hotmail.com">letyuresti@hotmail.com</a>  ó al teléfono 83 58 20 00 Ext. 3530  
+						</p>
+					</div>
+				</div>	
+			<div id="jazz" class="article-cnt">
+					<div class="article last">
+						<h2>Jazz Team Tec</h2>
+						<img src="images/misc/jazz.jpg" width="280" height="150" class="left" alt="Erika Garza. Ensamble 40.">
+						<p class="">
+							<span>
+								"Próximamente"
+							</span>
+							
+							Próximamente.
+						</p>
+					</div>
+				</div>	
+				<div id="raices" class="article-cnt">
+					<div class="article last">
+						<h2>Raíces</h2>
+						<img src="images/misc/raices.jpg" width="280" height="150" class="left" alt="Erika Garza. Ensamble 40.">
+						<p class="">
+							
+							
+							Actividad del Departamento de Difusión Cultural en donde, a través de la música, canto y baile, se presenta el folklore de México y de otros países.
+						</br></br>
+
+							En los inicios de los años 60 y durante un lustro, estudiantes participaban en una actividad llamada “Estampas Mexicanas”, llegando a representar a México en la Olimpiada Cultural en 1968 en la Cd. de México. A partir de 1994 con el apoyo del Grupo Pulsar Internacional se retomó con gran fuerza el repertorio que ahora es un “espectáculo insignia” de Difusión Cultural.
+
+						</p>
+						<h3>¿Quiénes participan? </h3>
+						<p>
+							Alumnos de profesional y maestría del Campus Monterrey, ya sea como bailarines, cantantes, músicos y/o staff.
+						</p>
+						<h3>¿Cómo Participar?</h3>
+						<p>
+							 Presentándose a las audiciones de baile o canto. La fecha se dará a conocer en la junta de iniciación del Departamento, así como en los corchos y carteleras de Difusión Cultural, las cuales están distribuidas por todo el Campus.
+						</p>
+
+						<h3>Galeria</h3>
+						<ul class="galeria">
+							<li class="first">
+								<a href="images/galery/raices/raices_05.jpg" rel="shadowbox[raices]" title="">
+									<img src="images/galery/raices/raices_05.jpg" width="600" height="400" alt="" />
+								</a>
+							</li>
+							<li class="">
+								<a href="images/galery/raices/raices_04.jpg" rel="shadowbox[raices]" title="">
+									<img src="images/galery/raices/raices_04.jpg" width="190" height="190" alt="" />
+								</a>
+							</li>
+							<li>
+								<a href="images/galery/raices/raices_03.jpg" rel="shadowbox[raices]" title="">
+									<img src="images/galery/raices/raices_03.jpg" width="190" height="190" alt="" />
+								</a>
+							</li>
+							<li>
+								<a class="hide" href="images/galery/raices/raices_01.jpg" rel="shadowbox[raices]" title="">
+									<img src="images/galery/raices/raices_01.jpg" width="190" height="190" alt="" />
+								</a>
+							</li>
+
+							<li class="last">
+								<a href="images/galery/raices/raices_02.jpg" rel="shadowbox[raices]" title="">
+									<img src="images/galery/raices/raices_02.jpg" width="190" height="190" alt="" />
+								</a>
+							</li>
+						</ul>
+						</br></br>
+
+						<h3>Mayores informes</h3> 
+						<p> 
+							Comunicarse con Eloísa Hernández, Productora ejecutiva asociada de Raíces al correo: <a href="eloisahg@itesm.mx">eloisahg@itesm.mx</a> ó al teléfono 83 58 20 00 Ext. 3534  
+						</p>
+					</div>
+				</div>
+				<div id="requiem" class="article-cnt">
+					<div class="article last">
+						<h2>Réquiem y Compresencias</h2>
+						<img src="images/misc/requiem.jpg" width="280" height="150" class="left" alt="Erika Garza. Ensamble 40.">
+						<p class="">
+							
+							En 1979 se crea el ciclo literario “Compresencias”. La muerte del maestro Juan Rulfo, quien participó como autor invitado en dos ocasiones en esta actividad,  motivó, en 1986 a la creación de una nueva actividad: “Réquiem”.
+						</p>
+						<h3>¿Quiénes participan?</h3>
+						<p>
+							Pueden participar alumnos de profesional, maestría y doctorado del Campus Monterrey, ya sea como lectores, cantantes, músicos o staff –dependiendo del formato de cada montaje.
+						</p>
+						<h3>Proceso de audición</h3>
+						<p>
+							Los interesados deberán presentarse en el lugar y hora acordados con 2 fotografías y ficha de datos. Se les pedirá hacer una lectura del material bajo las indicaciones del director. 
+						</p>
+						<h3>Resultados</h3>
+						<p>
+							Se notificarán vía correo electrónico y se publicarán en los corchos del Departamento.
+						</p>
+						<h3>Galeria</h3>
+						<ul class="galeria">
+							<li class="first">
+								<a href="images/galery/requiem/requiem_01.jpg" rel="shadowbox[requiem]" title="">
+									<img src="images/galery/requiem/requiem_01.jpg" width="600" height="400" alt="" />
+								</a>
+							</li>
+							<li class="">
+								<a href="images/galery/requiem/requiem_02.jpg" rel="shadowbox[requiem]" title="">
+									<img src="images/galery/requiem/requiem_02.jpg" width="190" height="190" alt="" />
+								</a>
+							</li>
+							<li class="last">
+								<a href="images/galery/requiem/requiem_03.jpg" rel="shadowbox[requiem]" title="">
+									<img src="images/galery/requiem/requiem_03.jpg" width="190" height="190" alt="" />
+								</a>
+							</li>
+						</ul>
+						</br></br>
+						
+						<h3>Mayores informes</h3> 
+						<p> 
+							Comunicarse con Gerardo Garza Ramírez, Director de Réquiem y Compresencias al correo: <a href="gerardogarza@itesm.mx">gerardogarza@itesm.mx o al teléfono  83 58 20 00 Ext. 3533</a>
+						</p>
+					</div>
+				</div>
+				<div id="revista" class="article-cnt">
+					<div class="article last">
+						<h2>Revista musical</h2>
+						<img src="images/misc/revista.jpg" width="280" height="150" class="left" alt="Erika Garza. Ensamble 40.">
+						<p class="">
+							
+							
+							La Revista Musical inicia como un espectáculo ideado y dirigido por el Lic. Maldonado en el año de 1966 en el teatro del IMSS. En ese entonces la primera edición comprendía varios números musicales típicos de revista, entre los que destacaba una pequeña adaptación de la comedia “Hello Dolly” de Jerry Hermann. Entre las Revistas Musicales más destacadas se encuentran: “Van bien, muchachos van bien”, “Fierecilla domada”, “La tía de Carlos”, “Volpone”, “Contra viento y marea” y más recientemente, “El violinista en el tejado”, “José el soñador”, “Mi bella dama”, “Jekyll & Hyde”, “Todo se vale”, Swenney Todd”, El Hombre de La Mancha”, La Novicia rebelde, La Bella y la Bestia y Legalmente Rubia.
+						</p>
+						<h3>¿Cómo audicionar?</h3>
+						<p>
+							El proceso de audición varía de acuerdo a las necesidades de la puesta y del director. Las audiciones para el Musical se dividen en 4 etapas:
+						</p>
+						<ul class="descripcion">
+							<li>
+								<span>
+									Todos los cantantes/actores interesados deberán presentarse en el día y la hora acordada con la pista de una canción de algún musical de Broadway. La selección la realizan nuestros maestros de música. Esta etapa no aplica para los cantantes que ya han participado en algún musical de Difusión Cultural, Campus Monterrey.
+								</span>
+							</li>
+							<li>
+								<span>
+									En la siguiente etapa, todos los seleccionados deberán acudir a Difusión Cultural por la letra de la canción del personaje que más se adapte a sus registros vocales y después presentarse a la audición final de canto en el día y la hora acordada. Esta etapa sí aplica para los alumnos que ya han participado en anteriores musicales.
+								</span>
+							</li>
+							<li>
+								<span>
+									En la tercera etapa, los alumnos que han sido preseleccionados, deberán realizar una prueba de actuación en el día y la hora acordada. Los alumnos que no fueron preseleccionados para algún papel, pasarán a formar parte del coro.
+								</span>
+							</li>
+							<li>
+								<span>
+									Esta etapa aplica únicamente para los alumnos que desean integrarse al cuerpo de baile y deberán presentarse en el día y la hora establecida.
+								</span>
+							</li>
+						</ul>
+						<p>
+							Los alumnos que desean formar parte de la Orquesta, serán evaluados en el día y la hora acorada por el director de la misma. Es requisito indispensable presentarse a la audición de Revista Musical con la solicitud llena y una fotografía tamaño infantil. Las solicitudes se entregan en la oficina de Difusión Cultural, ubicada en el edificio del gimnasio segundo piso.
+						</p>
+						<h3>Ensayos</h3>
+						<p>
+							Los ensayos de Revista Musical se realizan de la siguiente manera:
+						</p>
+						<ul class="descripcion">
+							<li>
+								<span>
+									Actuación: de lunes a jueves a las 13:00 hrs. Los viernes se ensambla todo lo ensayando durante la semana a las 18:00 hrs.
+								</span>
+							</li>
+							<li>
+								<span>
+									Cuerpo de baile: martes y jueves a las 13:00 hrs.y/o 18:00 hrs.
+								</span>
+							</li>
+							<li>
+								<span>
+									Coro: lunes, miércoles y viernes a las 13:00 hrs.
+								</span>
+							</li>
+							<li>
+								<span>
+									Orquesta: Martes y jueves a las 13:00 hrs. y/o 20:00 hrs. y los sábados 15:00 hrs.
+								</span>
+							</li>
+							<li>
+								<span>
+									Los ensayos, durante la semana de montaje y previos al estreno, serán a las 18:00 hrs. en el Auditorio Luis Elizondo.
+								</span>
+							</li>
+							<li>
+								<span>
+									Los ensayos de los fines de semana quedarán a discreció del director y de los avances obtenidos.
+								</span>
+							</li>
+						</ul>
+						<h3>Resultados</h3>
+						<p>
+							  Serán notificados a través de correo electrónico y en una lista pegada en los pizarrones de Difusión Cultural y del Centro Cultural, después de haber terminado con todo el proceso de selección.
+						</p>
+						<h3>Mayores informes</h3> 
+						<p> 
+							Comunicarse con Luis Franco, Coordinador de Teatro y Director de Revistas Musicales al correo: <a href="mailto:luis.franco@itesm.mx">luis.franco@itesm.mx</a> ó al teléfono 83 58 20 00 Ext. 3529
+						</p>
+
+					</div>
+				</div>
+				<div id="staff" class="article-cnt">
+					<div class="article last">
+						<h2>STAFF</h2>
+						<img src="images/misc/staff2.jpg" width="280" height="150" class="left" alt="Erika Garza. Ensamble 40.">
+						<p class="">
+							
+							
+							El Staff de Difusión Cultural es el grupo que se encarga del apoyo técnico y escénico en los diferentes eventos, producciones y actividades representativas que se llevan a cabo a lo largo del semestre. El trabajo del Staff es una experiencia increíble ya que, además de lo divertido e interesante que resulta, adquieres conocimientos y desarrollas habilidades muy importantes para tu formación profesional.
+						</p>
+						<h3>¿Quiénes participan?</h3>
+						<p>
+							Alumnos de carreras profesionales y maestrías del Campus Monterrey, con o sin experiencia en la actividad.
+						</p>
+						<h3>¿Cómo participar?</h3>
+						<p>
+							Si eres alumno y deseas participar como Staff en alguna de las puestas en escena deberás inscribirte en las oficinas de Difusión Cultural donde además tendrás la oportunidad de expresar tus intereses y expectativas del grupo. Una vez inscrito(a), recibirás un curso de capacitación donde aprenderás los conceptos y habilidades básicos para desempeñarte. Finalmente, se te enviará la relación de espectáculos que se presentarán en el semestre y en los que quedaste seleccionado(a) para participar como Staff.
+						</p>
+						<h3>Áreas</h3>
+						<p>
+							Existen múltiples áreas en las que te puedes desempeñar, estas son:
+							</br></br>
+							<strong>Vestuario:</strong> En Difusión Cultural contamos con un almacén de vestuario en donde miles de prendas de todas las tallas, regiones, colores, estilos y épocas, están a la disposición de productores y coordinadores de vestuario. El Staff identifica, organiza y controla el vestuario, dependiendo del tipo de producción o apoya a bailarines y actores a realizar cambios rápidos.
+							</br></br>
+							<strong>Utilería y Escenografía:</strong> Ya sea en una obra de teatro, un concierto o un espectáculo de baile, se debe hacer un minucioso recuento de los objetos que deben entrar a escena, muchos de ellos sujetos a estilos de vida, épocas y culturas específicas. El control y la organización de la utilería es una de las tareas más importantes del Staff.
+							</br></br>			
+							<strong>Staff Escénico:</strong> El Staff escénico tiene la responsabilidad de que las personas cumplan sus tareas, entren a tiempo y tengan lo necesario para lograr una actuación sin contratiempos. También son quienes llevan a cabo los cambios de escenografía, entre muchas otras tareas “tras bambalinas” que hacen posible el espectáculo.
+							</br></br>	
+							<strong>Sonido:</strong> Diferentes son los tipos de micrófonos que tendrás que aprender a manejar para cada uno de los espectáculos que se presentan. Rapidez, coordinación y una buena comunicación son habilidades que desarrollarás en esta área.
+							</br></br>
+							<strong>Iluminación:</strong> De acuerdo a tus habilidades y experiencia, tendrás la responsabilidad de asistir a un técnico en los cambios de iluminación durante una función u operar un seguidor para iluminar a un actor, cantante o bailarín.
+						</p>
+						<h3>Mayores informes</h3> 
+						<p> 
+							Comunicarse con Ramón Alberto Angulo, Coordinador del grupo STAFF de Difusión Cultural: <a href="mailto:ramonalberto.ar@gmail.com">ramonalberto.ar@gmail.com</a> 
+						</p>
+						</br></br>	
+						<h3>Galeria</h3>
+						<ul class="galeria">
+							<li class="first">
+								<a href="images/galery/staff/staff_01.jpg" rel="shadowbox[staff]" title="">
+									<img src="images/galery/staff/staff_01.jpg" width="600" height="400" alt="" />
+								</a>
+							</li>
+							<li class="">
+								<a href="images/galery/staff/staff_02.jpg" rel="shadowbox[staff]" title="">
+									<img src="images/galery/staff/staff_02.jpg" width="190" height="190" alt="" />
+								</a>
+							</li>
+							<li>
+								<a href="images/galery/staff/staff_03.jpg" rel="shadowbox[staff]" title="">
+									<img src="images/galery/staff/staff_03.jpg" width="190" height="190" alt="" />
+								</a>
+							</li>
+							<li>
+								<a class="hide" href="images/galery/staff/staff_04.jpg" rel="shadowbox[staff]" title="">
+									<img src="images/galery/staff/staff_04.jpg" width="190" height="190" alt="" />
+								</a>
+							</li>
+							<li>
+								<a class="hide" href="images/galery/staff/staff_06.jpg" rel="shadowbox[staff]" title="">
+									<img src="images/galery/staff/staff_06.jpg" width="190" height="190" alt="" />
+								</a>
+							</li>
+							<li>
+								<a class="hide" href="images/galery/staff/staff_07.jpg" rel="shadowbox[staff]" title="">
+									<img src="images/galery/staff/staff_07.jpg" width="190" height="190" alt="" />
+								</a>
+							</li>
+
+							<li class="last">
+								<a href="images/galery/staff/staff_05.jpg" rel="shadowbox[staff]" title="">
+									<img src="images/galery/staff/staff_05.jpg" width="190" height="190" alt="" />
+								</a>
+							</li>
+						</ul>
+						</br></br>
+
+						<h3>Mayores informes</h3> 
+						<p> 
+							Comunicarse con Ramón Alberto Angulo, Coordinador del grupo STAFF de Difusión Cultural: <a href="mailto:ramonalberto.ar@gmail.com">ramonalberto.ar@gmail.com</a>  
+						</p>
+					</div>
+				</div>
+				<div id="sintec" class="article-cnt">
+					<div class="article last">
+						<h2>SINTEC</h2>
+						<img src="images/misc/sintec.jpg" width="280" height="150" class="left" alt="Erika Garza. Ensamble 40.">
+						<p class="">
+							
+							
+							La actividad en el área clásica inicia en el Tec con una pequeña orquesta a finales de los años 40. En 1977 Jesús Delgado reanuda la actividad cerca de 4 años, pero no es hasta 1988, por instancia del Dr. Rafael Rangel Sostmann que Difusión Cultural retoma la actividad con la Orquesta de Cámara bajo la dirección de Jorge Gallegos, Patricio Gómez Junco, Antonio González y Hazael Martínez sucesivamente. En 2001 el grupo evoluciona a una Sinfonietta y a partir de 2008, con el crecimiento de su alumnado, presentan un concierto con Susana Zabaleta y entonces es llamada “Orquesta Sinfónica Juvenil”, dando así oportunidad de abordar un repertorio sinfónico cada vez más comprometedor.
+						</p>
+						<h3>¿Quiénes participan? </h3>
+						<p>
+							Alumnos de carrera, preparatoria y postgrado de los diferentes campus de la Zona Metropolitana de Monterrey con un nivel de suficiente a sobresaliente como ejecutante de los diferentes instrumentos de las secciones de cuerdas, alientos y percusiones de una orquesta sinfónica.
+						</p>
+						<h3>¿Cómo participar?</h3>
+						<p>
+							Solicitando una audición con la productora ejecutiva a través de un correo electrónico. Las audiciones se llevan a cabo los primeros días de cada semestre.  Deberás llevar dos fotografías y llenar una ficha de datos que se entregará en ese momento.  Debes contar con instrumento propio (excepto tuba y percusiones).
+						</p>
+						<h3>Becas CEMEX</h3>
+						<p>
+							En apoyo a este grupo, el Tecnológico ofrece las BECAS CEMEX a la excelencia musical que integran a alumnos con alto nivel de interpretación en los diferentes instrumentos.
+						</p>
+						<h3>Ensayos</h3>
+						<p>  
+							Los ensayos y presentaciones de la Sinfónica se realizan de la siguiente manera:
+						</p>
+						<ul class="descripcion">
+							<li>
+								<span>
+									Ensayos: martes y jueves de 20:00 a 22:00 hrs. y domingos de 11:00 a 14:00 hrs.
+								</span> 
+							</li>
+							<li>
+								<span>
+									Ensayos generales son en la semana del evento: miércoles y jueves de 19:30 a 22:00 hrs.
+								</span>
+							</li>
+							<li>
+								<span>
+									Los conciertos se presentan en el Auditorio Luis Elizondo.
+								</span>
+							</li>
+							<li>
+								<span>
+									Este grupo tiene temporada de estreno y reposición en cada semestre.
+								</span>
+							</li>
+							<li>
+								<span>
+									La Orquesta Sinfónica Juvenil y el Coro de la Comunidad del Tec, desde hace varios años, 		participan en las ceremonias de graduación de la Rectoría de la Zona Metropolitana de 		Monterrey, eventos considerados de los más importantes para el Instituto.
+								</span>
+							</li>
+						</ul>
+						<h3>Galeria</h3>
+						<ul class="galeria">
+							<li class="first">
+								<a href="images/galery/sintec/sintec_08.jpg" rel="shadowbox[sintec]" title="">
+									<img src="images/galery/sintec/sintec_08.jpg" width="600" height="400" alt="" />
+								</a>
+							</li>
+							<li class="">
+								<a href="images/galery/sintec/sintec_07.jpg" rel="shadowbox[sintec]" title="">
+									<img src="images/galery/sintec/sintec_07.jpg" width="190" height="190" alt="" />
+								</a>
+							</li>
+							<li>
+								<a href="images/galery/sintec/sintec_06.jpg" rel="shadowbox[sintec]" title="">
+									<img src="images/galery/sintec/sintec_06.jpg" width="190" height="190" alt="" />
+								</a>
+							</li>
+							<li>
+								<a class="hide" href="images/galery/sintec/sintec_04.jpg" rel="shadowbox[sintec]" title="">
+									<img src="images/galery/sintec/sintec_04.jpg" width="190" height="190" alt="" />
+								</a>
+							</li>
+							<li>
+								<a class="hide" href="images/galery/sintec/sintec_03.jpg" rel="shadowbox[sintec]" title="">
+									<img src="images/galery/sintec/sintec_03.jpg" width="190" height="190" alt="" />
+								</a>
+							</li>
+							<li>
+								<a class="hide" href="images/galery/sintec/sintec_02.jpg" rel="shadowbox[sintec]" title="">
+									<img src="images/galery/sintec/sintec_02.jpg" width="190" height="190" alt="" />
+								</a>
+							</li>
+							<li>
+								<a class="hide" href="images/galery/sintec/sintec_01.jpg" rel="shadowbox[sintec]" title="">
+									<img src="images/galery/sintec/sintec_01.jpg" width="190" height="190" alt="" />
+								</a>
+							</li>
+
+							<li class="last">
+								<a href="images/galery/sintec/sintec_05.jpg" rel="shadowbox[sintec]" title="">
+									<img src="images/galery/sintec/sintec_05.jpg" width="190" height="190" alt="" />
+								</a>
+							</li>
+						</ul>
+						</br></br>
+						<h3>Mayores informes</h3> 
+						<p> 
+							Comunicarse con Letycia Uresti, Productora ejecutiva de los eventos de la Orquesta Sinfónica Juvenil y del Coro de la Comunidad del Tecnológico de Monterrey a los correos: <a href="mailto:letyuresti@itesm.mx">letyuresti@itesm.mx</a> y <a href="mailto:letyuresti@hotmail.com">letyuresti@hotmail.com</a>  ó al teléfono 83 58 20 00 Ext. 3530  
+						</p>
+					</div>
+				</div>
+				<div id="teatro" class="article-cnt">
+					<div class="article last">
+						<h2>Teatro (cuatro ciclos)</h2>
+						<img src="images/misc/teatro.jpg" width="280" height="150" class="left" alt="Erika Garza. Ensamble 40.">
+						<p class="">
+							
+							El teatro en el Tec inicia sus actividades en el año de 1962, justo cuando un grupo de inquietos estudiantes deseosos de manifestarse artísticamente, pidieron apoyo al Ing. Carlos H. García, maestro del Departamento de Administración en aquel entonces, pero a la vez, director y actor con sólida trayectoria en Monterrey, quien los asesorará y ayudará a concretar este sueño. La primera obra en presentarse, como experimento de teatro estudiantil universitario, fue “Contigo pan y cebolla” de Manuel Gorostiza. A esta obra le han seguido numerosos títulos que se convirtieron en exitosas puestas en escena: “Las brujas de Salem” de Arthur Miller, “La gaviota” de Antón Chéjov, “Corazón ardiente” de John Patrick, “Atrapados sin salida” de Dale Wasserman, “La maestra milagrosa” de William Gibson, “Ana de los mil días” de Maxwell Anderson, entre cientos de títulos más.
+							</br></br>
+
+							Durante estos más de 50 años de actividad teatral, destaca la participación de primerísimos actores y figuras de reconocida trayectoria nacional, como es el caso de la inolvidable Ofelia Guilmain, quién participó al lado de estudiantes en las puestas: “La casa de Bernarda Alba” de Federico García Lorca y “Medea” de Eurípides. Con el  Sr. Ignacio López Tarso, los alumnos estrenaron “Edipo Rey” de Sófocles.
+						</p>
+						<h3>¿Quiénes participan? </h3>
+						<p>
+							 Alumnos de carreras profesionales y maestrías del Campus Monterrey, con o sin experiencia.
+						</p>
+						<h3>¿Cómo participar? </h3>
+						<p>
+							 Los  alumnos que deseen participar como actores en alguna de las obras de teatro del semestre en curso, deberán pasar una audición, la cual se realiza durante el primer fin de semana de inicio de clases y es encabezada por el director de cada proyecto. La fecha y lugar exactos se dan a conocer en la junta de inducción del Departamento, en los pizarrones ubicados en Difusión Cultural y en el Centro Cultural, así como también, en todas las carteleras distribuidas en el Campus. Si deseas participar en el staff,  no es necesario presentarse a las audiciones, acude por una solicitud con el coordinador a nuestras oficinas.
+						</p>
+						<h3>¿Cómo audicionar?</h3>
+						<p>
+							  El proceso de audición varía de acuerdo a las necesidades de la puesta y del director. Regularmente los interesados en participar en alguna puesta en escena se seleccionan de acuerdo a una lectura de la obra a representar. En esta etapa el director del proyecto valora varios puntos como la voz, dicción, intenciones y tipos, este último va ligado a las necesidades fisonómicas que determinado personaje necesita. Es indispensable presentarse a la audición con la solicitud previamente llena y anexar una fotografía tamaño infantil. Dicho registro, deberá ser llevado a la oficina de Luis Franco, coordinador de Teatro, ubicada en el edificio del gimnasio, 2do. piso.
+						</p>
+						<h3>Resultados</h3>
+						<p>
+							  Serán notificados en una lista pegada en los pizarrones de Difusión Cultural y del Centro Cultural, después de haber terminado con todo el proceso de selección. Además se enviarán a través de correo electrónico.
+						</p>
+						<h3>Mayores informes</h3> 
+						<p> 
+							Comunicarse con Luis Franco, Coordinador de Teatro y Director de Revistas Musicales al correo: <a href="mailto:luis.franco@itesm.mx">luis.franco@itesm.mx</a> ó al teléfono 83 58 20 00 Ext. 3529
+						</p>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="inner-940px">
+			<span class="left">Difusión Cultural Campus Monterrey Copyright 2013</span>
+			<span class="right bluemilk">Desarrollado por</span>
+		</div>
+	</div>
+</body>
+</html>
+<!--jQuery functions-->
+	<script type="text/javascript">
+		$(function() {
+			$( "#tabs" ).tabs();
+		});
+	</script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {	
+			jQuery('ul.sf-menu').superfish({	
+		 		speed:       1,
+		 		autoArrows:    false,
+		 		cssArrows: false,
+		 		speedOut:      'normal',
+		 		delay:         200   
+			});
+		});
+	</script>
+	<script type="text/javascript"> 
+		Shadowbox.init({ language: 'en', players: ['img', 'html', 'iframe', 'qt', 'wmp', 'swf', 'flv'] }); 
+	</script>

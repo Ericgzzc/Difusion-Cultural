@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!--CSS-->
+	<link href="css/main.css" rel="stylesheet" type="text/css" />
+	<link href="vendors/css/superfish.css" rel="stylesheet" type="text/css" />
+	<link href="vendors/css/superfish-navbar.css" rel="stylesheet" type="text/css" />
+	<!--Javascripsts-->
+	<script type="text/javascript" src="vendors/js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="vendors/js/superfish.js"></script>
+	<script type="text/javascript" src="vendors/js/idtabs.min.js"></script>
+
+	<title>Contacto | Difusión Cultural </title>
+</head>
+<body>
+	<!--FACEBOOK-->
+    <div id="fb-root"></div>
+	<script>
+		(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1&appId=186532228183052";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+
+	<div class="fixed">
+		<ul class="social right">
+	  		<li><a class="face" href="https://www.facebook.com/difusionculturaltecmty?fref=ts" target="_blank"></a></li>
+	  		<li><a class="tweet" href="https://twitter.com/intent/user?screen_name=tecdifucultural" target="_blank"></a></li>
+	  		<li class="last"><a class="youtube" href="https://www.youtube.com/user/TECDCMTY?feature=watch" target="_blank"></a></li>  
+	  	</ul>
+	 </div>
+	<header>
+		<div class="inner-940px">
+			<a href="home.html" class="left" id="logodc"></a>
+			<a href="www.itesm.mx" target="_blank" class="right" id="logotec"></a>
+		</div>
+	</header>
+	<nav>
+		<div class="inner-940px">
+			<ul class="main sf-menu sf-navbar">
+  				<li><a class="" href="home.html">Principal</a></li>
+  				<li>
+  					<a class="" href="cartelera.html">Cartelera</a>
+  					<ul>
+  						<li>Consulta el programa de actividades de este semestre.</li>
+  					</ul>
+  				</li>
+  				<li>
+  					<a class="" href="actividades.html">Actividades representativas</a>
+  					<ul>
+  						<li>Aquí podrás consultar las fechas, requisitos para audicionar y todo lo relacionado con las actividades representativas.</li>
+  					</ul>
+  				</li>
+  				<li>
+  					<a class="" target="_blank" href="http://www.difucursos.com.mx">Cursos y Clubes musicales</a>
+  					<ul>
+  						<li>Consulta la oferta de Cursos y Clubes musicales del siguiente semestre.</li>
+  					</ul>
+  				</li>
+  				<li>
+  					<a class="" href="concursos.html">Concursos</a>
+  					<ul>
+  						<li>Si eres alumno del Campus podrás participar en: Monólogos, Baile, Creación Literaria y Festival de la Canción y música electrónica.</li>
+  					</ul>
+  				</li>
+  				<li>
+  					<a class="" href="#">Ffig</a>
+  					<ul>
+  						<li>Festival Internacional Folklórico Globalifílicos.</li>
+  					</ul>
+  				</li>
+  				<li>
+  					<a class="" href="met.html">MET</a>
+  					<ul>
+  						<li>Difusión Cultural presenta: En Vivo desde el MET. Consulta la cartelera.</li>
+  					</ul>
+  				</li>
+  				<li>
+  					<a class="" href="tours.html">Tours</a>
+  					<ul>
+  						<li>¿Quieres conocer el mundo trás bambalinas? Entra aquí y consulta las fechas de los recorridos en el Auditorio Luis Elizondo.</li>
+  					</ul>
+  				</li>
+  				<li><a class="	" href="acerca.html">Quiénes somos</a></li>
+  				<li class="contacto"><a class="selected" href="contacto.html"></a></li> 
+  			</ul>
+  		</div>
+	</nav>
+	
+	<div id="main">
+		<div id="content">
+			<div class="inner-940px banner">
+				<img src="images/misc/contacto.jpg">
+			</div>
+			<div class="inner-940px contacto">
+				<h1>Contacto</h1>
+				<div class="wrapper">
+					<form action="http://cgi.mty.itesm.mx/getcomments/getcomments.cgi" 
+					   method="post" name="postal" onsubmit=verificaNombre() id="postal">
+	                	<div class="nombre">
+	                   		<input placeholder="Nombre Completo" class="contacto-int" name="Nombre" type="text" id="Nombre" size="44">
+	                    </div>
+	                    <div class="nombre">
+	                    	<input placeholder="Correo Electrónico" class="contacto-int" name="e-mail" type="text" id="e-mail" size="44">
+	                    </div>
+	                    <div class="nombre">
+	                  		<input placeholder="Asunto" class="contacto-int" name="subject" type="text" id="subject" size="44">
+	                    </div>
+	                    <div class="nombre">
+	                    	<br>
+	                    	<textarea style="height:190px" placeholder="Escribe aquí tus comentarios..." class="contacto-int" name="sugerencias" cols="33" rows="5" id="sugerencias"></textarea>
+	                    </div>
+	                    <input id="borrar-btn" style="margin-top:5px" type="reset" name="Submit2" value="Borrar">
+	                    <input id="enviar-btn" style="margin-top:5px" type="submit" name="Submit" value="Enviar"> 
+	                   
+	                        <INPUT type=hidden value=cecilia.morales@itesm.mx name=_mailto>
+	                        <INPUT type=hidden value=Comentarios name=_mailsubj>
+	                        <INPUT type=hidden value=cecilia.morales@itesm.mx name=_errorsto>
+	                        <INPUT type=hidden value=/www/cgi/getcomments/ name=_comment_dir>
+	                        <INPUT type=hidden value=true name=_show>
+	                        <INPUT type=hidden value=all name=_mail_vals>
+	                        <INPUT type=hidden value=false name=_append>    
+	                 </form>
+				</div>
+				<div class="wrapper last">
+					<div class="fb-like-box" data-href="https://www.facebook.com/difusionculturaltecmty" data-width="450" data-height="400" data-show-faces="true" data-header="true" data-stream="true" data-show-border="false"></div>
+				</div>			
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="inner-940px">
+			<span class="left">Difusión Cultural Campus Monterrey Copyright 2013</span>
+			<span class="right bluemilk">Desarrollado por</span>
+		</div>
+	</div>
+</body>
+</html>
+<!--jQuery functions-->
+	<script type="text/javascript"> 
+  		$(".subnav ul").idTabs(); 
+	</script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {	
+			jQuery('ul.sf-menu').superfish({	
+		 		speed:       1,
+		 		autoArrows:    false,
+		 		cssArrows: false,
+		 		speedOut:      'normal',
+		 		delay:         200   
+			});
+		});
+	</script>

@@ -1,0 +1,12 @@
+AuthType Basic
+AuthName WebPublisher
+<Limit GET HEAD OPTIONS PROPFIND>
+	require user al589835@mail.mty.itesm.mx A00618654@itesm.mx ggciardz@itesm.mx hugarza@itesm.mx cecilia.morales@itesm.mx ernesto.martinez@itesm.mx A01030118@itesm.mx 
+</Limit>
+<Limit PUT LOCK UNLOCK COPY MOVE DELETE MKCOL PROPPATCH>
+	require user al589835@mail.mty.itesm.mx A00618654@itesm.mx ggciardz@itesm.mx hugarza@itesm.mx cecilia.morales@itesm.mx ernesto.martinez@itesm.mx A01030118@itesm.mx 
+</Limit>
+Auth_IMAP_Enabled On
+Auth_IMAP_Authoritative on
+Auth_IMAP_Port 110
+Auth_IMAP_Server itesm.mx

@@ -1,0 +1,1786 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery1.7.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.jcarousel.js"></script>
+<script type="text/javascript" src="js/idtabs.js"></script>
+<script type="text/javascript" language="javascript" src="js/jquery.dataTables.js"></script>
+<script type="text/javascript" src="js/jquery.atooltip.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('a.normalTip').aToolTip();
+		$('a.fixedTip').aToolTip({
+		    fixed: true
+		});
+		$('a.clickTip').aToolTip({
+		    clickIt: true,
+		    tipContent: 'Horario por acordar en Difusión Cultural. Revisa la disponibilidad del maestro en la siguiente liga: <a style="color:#fff" href="docs/horariosind13.xls" target="_blank">Ver Horarios</a>. Paga tu clase antes de 24 horas después de haberte registrado en el <a href="http://estudiante.mty.itesm.mx/dc/" target="_blank" style="color:#fff">sistema</a> y lleva tu comprobante a Difusión Cultural para hacer válido tu horario.'
+		});		
+		$('a.callBackTip').aToolTip({
+			clickIt: true,
+			onShow: function(){alert('I fired OnShow')},
+			onHide: function(){alert('I fired OnHide')}
+		});		
+	}); 
+</script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function() {
+	oTable = $('#example').dataTable({
+		"bJQueryUI": true,
+		"sPaginationType": "full_numbers"
+				});
+			} );
+</script>
+
+    
+  
+	
+<style type="text/css" title="currentStyle">
+			@import "css/demo_table_jui.css";
+			@import "css/jquery-ui-1.8.4.custom.css";
+</style>	
+<title>Difusión Cultural | Cursos </title>
+</head>
+<body class="concursos">
+<div id="container2">
+    <div id="header">
+    	<div id="skin">
+        		<a target="_blank" href="http://www.itesm.edu/" class="itesm fleft"></a>
+                <a href="home.html" class="difusion fright"></a>
+        </div>
+       <div id="menu">
+             <ul class="nav sf-menu menu-a">
+                <li class="pestaña "><a class="liga" href="home.html">INICIO</a></li>
+                <!--
+                <li class="pestaña"><a class="liga" href="actividades.html">ARTES INTERPRETATIVAS</a></li>
+
+              -->
+              <li class="pestaña selected"><a class="liga  " href="cursos.html">CURSOS Y TALLERES</a></li>
+                <li class="pestaña"><a class="liga" href="concursos.html">CONCURSOS</a></li>
+                <li class="pestaña"><a class="liga"  href="cinetica.html">CINÉTICA</a></li>
+                <li class="pestaña"><a class="liga" target="_blank" href="http://www.mty.itesm.mx/dae/ddc/met.html">MET</a></li>
+
+                <!--
+                 <li class="pestaña flecha"><a class="liga  " href="cursos.html">CINÉTICA</a>
+                    
+
+                  <ul class="submenu">
+                        <li class="nobt nobb"><a  target="_blank" href="cinetica.html">CINÉTICA</a></li>
+                        <li class="nobb"><a  target="_blank" href="globalifilicos/home.html">GLOBALIFÍLICOS</a></li>
+                        <li class="last"><a  target="_blank" href="met.html">MET</a></li>
+                    </ul>
+                
+                 
+                 </li>
+                 -->
+              
+            </ul>
+        </div>
+    </div>
+    <div id="content">
+    	<div id="banner">
+        	<div class="fleft">
+        		<h1><strong>Cursos Difusión Cultural</strong> (Inicio: 14 de enero de 2013)</h1>
+            </div>
+            
+        </div>
+      <div id="info">
+      	<div id="fix">
+            	<h1 class="ttl">Proceso de Inscripción E-M 2013</h1> 
+                <div class="paso">
+                    <p class="txt"><strong>Paso 1: Consulta la Información</strong><br /><br />Escoge el curso que quieras tomar dentro de la gran oferta que tenemos para ti, puede ser más de uno.
+        No olvides revisar bien tu horario y el costo de la clase que quieras tomar el próximo semestre antes de inscribirte en el sistema.</p>
+                </div>
+                <div class="paso">
+                    <p class="txt"><strong>Paso 2: Inscríbete en el Sistema</strong><br /><br />Es necesario que te inscribas en el sistema de inscripciones de la Dirección de Asuntos Estudiantiles a través de la siguiente liga:</p>
+                    <a id="btnsistema" href="http://estudiante.mty.itesm.mx/dc/" target="_blank">Sistema</a>
+                    
+                </div>
+                <div class="paso">
+                    <p class="txt"><strong>Paso 3: Realiza tu Pago</strong><br /><br />Para realizar tu pago puedes acudir al banco de tu preferencia utilizando las <a href="images/misc/referencia.jpg" target="_blank">referencias bancarias</a> o bien ve directamente a Tesoreria del Campus Monterrey (frente a la Cafetería Centrales) con  la clave 0200981.
+  <br />
+Conserva el comprobante de pago.</p>
+                </div>
+                <div class="paso">
+                    <p class="txt"><strong>Paso 4: Finaliza tu Inscripción</strong><br /><br />Para hacer oficial tu inscripción es necesario acudir a Difusión Cultural  antes de <strong>24 horas</strong> de haber realizado tu registro y pago (en el pasillo DAF o en  el 2º  piso del Gimnasio de Básquetbol ) y preguntes por la maestra Luzella Rodríguez para entregarle tu comprobante de pago.</p>
+                </div>
+                
+                <div id="idTab" class="barriba"> 
+  					<ul class="" id="cursosnav"> 
+    					<li class="pestaña infoge"><a  class="selected info" href="#infog">Información General</a></li> 
+    					<li class="pestaña ofertacu"><a class="oferta" href="#oferta">Oferta de Cursos, Clubes y Talleres</a></li> 
+    				</ul> 
+  					<div id="infog">
+                    	<h1 class="ttl">Información General de los Cursos, Clubes y Talleres</h1>
+                        <h2 class="ttl2">Fechas Importantes</h2>
+                        <h2 style="font-weight:400; background-color:#09F;padding:5px;border-radius:5px;" class="ttl2">Aprovecha el 10% de descuento validándote tu curso en tu historial académico</h2>
+                    	<ul class="funciones fecha fleft babajo margin5">
+                    		<li><strong>Registro, Selección de Horario en Sistema DAE.</strong> <br />Del 11 de diciembre al 18 de enero.</li>
+                   			
+                    		<li><strong>Inscripción Presencial oficinas de Difusión Cultural.</strong> <br />Del 7 al 11 de enero de 2013.</li>
+                    		<li><strong>Inscripciones Tardías en pasillo DAF.</strong> <br />Del 14 al 18 de enero de 2013.</li>
+                		</ul>
+                         <h2 class="ttl2">Fechas extemporáneas</h2>
+                        <h2 style="font-weight:400" class="ttl2">No tiene descuento y no se valida en tu historial académico</h2>
+                    	<ul class="funciones fecha fleft babajo margin5">
+                    		<li><strong>Registro, Selección de Horario en Sistema DAE.</strong> <br />Del 21 al 31 de enero de 2013.</li>
+                   			
+                    		
+                		</ul>
+                        <h2 class="ttl2">Clases Individuales</h2>
+                         <p style="border-bottom:1px solid #ccc; padding-bottom:10px;width:100%;margin-bottom:10px" class="txt">Si tu clase es individual es muy importante que realices tu pago en las próximas 24 horas después de haber realizado tu inscripción de lo contrario es posible que tu lugar sea ocupado por otro estudiante.<br /> Las clases individuales se componen de 1 hora a la semana, revisa la <a href="docs/horariosind13.xls" target="_blank">disponibiliad de horario</a> según el profesor del curso que quieras tomar.</p>
+                        <h2 class="ttl2">Costos</h2>
+                        	<div class="CSSTableGenerator" >
+	<table class="txt" id="costos" width="100%" border="0" cellpadding="0" cellspacing="0">
+		<tr> 
+		<td>Curso</td>
+			<td>Alumnos</td>
+			<td>Empleados</td>
+			<td>Ex-A-Tec y Padres de alumnos</td>
+			<td>Externos</td>
+		</tr>
+			<tr>
+										<th>Clases y Talleres</th>
+										<td  align="center" > $1,782.00 </td>
+										<td  align="center"> $1,850.00 </td>
+										<td  align="center" >  $2,255.00 </td>
+										<td  align="center">  $3,185.00  </td>
+									</tr>
+                                    <tr>
+										<th>Cocina práctica para estudiante</th>
+										<td  align="center" > $1,188.00 </td>
+										<td  align="center"> $1,235.00 </td>
+										<td  align="center" >  $1,500.00 </td>
+										<td  align="center">  $2,125.00  </td>
+									</tr>
+                                    
+                                    <tr>
+										<th>Borregos literarios</th>
+										<td  align="center" > $890.00 </td>
+										<td  align="center"> $925.00 </td>
+										<td  align="center" >  $1,130.00 </td>
+										<td  align="center">  $1,650.00  </td>
+									</tr>
+                                    
+                                  <!--  <tr>
+                                    	<th>Violonchelo</th>
+										<td align="center"> $5,275.00 </td>
+										<td   align="center"> $5,460.00</td>
+										<td align="center"> $6,660.00  </td>
+										<td   align="center"> $9,390.0 </td>
+									</tr>
+  								
+                                        <th>Clase individual</th>
+                                        <td align="center"> $3,070.00  </td>
+                                        <td align="center">  $3,365.00</td>
+                                        <td align="center">  $3,860.00  </td>
+                                        <td   align="center"> $5,140.00  </td>
+                                    </tr>-->
+                                    
+                                   	<tr>
+                                    	<th>Acordeón, Batería, Flauta, Trompeta, <br /> Gaita, Percusiones, Saxofón y guitarra improvisación.</th>
+										<td align="center">  $4,145.00  </td>
+										<td align="center">  $4,545.00 </td>
+										<td align="center"> $5,210.00  </td>
+										<td   align="center">  $6,940.00  </td>
+									</tr>  
+                                    
+  									<tr>
+                                    	<th>Piano (indididual)</th>
+										<td align="center">  $4,585.00  </td>
+										<td align="center">  $4,825.00 </td>
+										<td align="center"> $5,740.00  </td>
+										<td   align="center">  $7,730.00  </td>
+									</tr>  
+  									<tr>
+										<th>Canto, violín y violonchelo (individuales)</th>
+										<td align="center">  $6,750.00  </td>
+										<td   align="center">  $6,780.00  </td>
+										<td align="center">  $7,065.00 </td>
+										<td   align="center">   $10,345.00  </td>
+  									</tr>
+  									<tr>
+										<th>Clubes y ajedrez</th>
+										<td align="center">Sin costo</td>
+										<td align="center">No participa</td>
+										<td align="center">No participa</td>
+										<td align="center">No participa</td>
+									</tr>
+	</table>
+</div>
+							
+							
+                <br>
+                			<table class="txt" id="costos" width="100%" border="0" cellpadding="0" cellspacing="0">      
+                    			<thead>
+          							<th></th>
+           							<th align="center">Hijo de empleados</th>
+                      				<th align="center" class="last" >Hijo de Ex-A-Tec</th>
+                      				<th align="center" > Niños Externos</th>
+                      			<tbody>
+									<tr>
+										<th style="width:22%">Clase para niñas y adolescentes</th>
+										<td  align="center"> $1,848.00</td>
+										<td  align="center"> $2,255.00</td>
+										<td  align="center">  $3,185.00</td>
+                                    </tr>
+  								</tbody>  
+                            </table>
+							
+                    </div> 
+  					<div id="oferta">
+                    	<h1 class="ttl">Cursos, Clubes y Talleres E-M 2013 <span style="font-size:10px; font-weight:normal">Ultima actualización: Miércoles 10 de Diciembre de 2012</span></h1>
+                        <p style="border-bottom:1px solid #ccc; padding-bottom:10px;width:100%;margin-bottom:10px" class="txt">Da click o pasa el cursor sobre los apartados con este símbolo: <span>!</span> para ver más información.</p>
+                        <div class="demo_jui">
+<table cellpadding="0" cellspacing="0" border="0" class="display txt" id="example">
+	<thead>
+		<tr>
+			<th>Categoría</th>
+			<th>Clase</th>
+            <th>Nivel</th>
+           	<th>Capacidad</th>
+            
+			<th>Maestro</th>
+			<th>Días</th>
+			<th>Horario</th>
+            <th>Salón</th>
+		</tr>
+	</thead>
+	<tbody>
+
+<tr class="gradeA">
+<td>Danza</td>
+<td>Bachata (Bailes de Salón)</td>
+<td class="center" >1</td>
+<td class="center" >30</td>
+<td class="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb"  >Ericka Pérez</a></td>
+<td class="center">Martes y Jueves</td>
+<td>10:30-12:00</td>
+<td>CCT-1</td>
+</tr>
+
+<tr class="gradeA">
+<td>Danza</td>
+<td>Bailes Gruperos</td>
+<td class="center" >1</td>
+<td class="center" >30</td>
+
+<td class="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Lydia Zulema Martínez Jiménez</a></td>
+<td class="center">Lunes y  Miércoles</td>
+<td>13:30-15:00</td>
+<td>CCT-2</td>
+</tr>
+
+<tr class="gradeA">
+<td>Danza</td>
+<td>Bailes Latinos A</td>
+<td class="center" >1</td>
+<td class="center" >30</td>
+
+<td class="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb"  >Guillermina Arreola</a></td>
+<td align="center">Lunes y Viernes</td>
+<td><a class="fixedTip exampleTip" title="Lunes">15:00-16:30<span>!</span></a><br /><a class="fixedTip exampleTip" title="Viernes">16:30-18:00 <span>!</span></a></td>
+<td>RE-104</td>
+</tr>
+                       
+<tr class="gradeA">
+<td>Danza</td>
+<td>Bailes Latinos B</td>
+<td class="center" >1</td>
+<td class="center" >30</td>
+<td class="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Gilberto Cruz Pérez Rodríguez</a></td>
+<td class="center">Miércoles y Viernes</td>
+<td>12:00-13:30</td>
+<td>CCT-2</td>
+</tr>
+
+<tr class="gradeA">
+<td>Danza</td>
+<td>Ballet</td>
+<td class="center" >1</td>
+<td class="center" >30</td>
+<td class="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb">Sara Marroquín</a></td>
+<td class="center">Lunes y Viernes</td>
+<td><a class="fixedTip exampleTip" title="Lunes">09:00-10:30 <span>!</span></a><br /><a class="fixedTip exampleTip" title="Viernes">10:30-12:00 <span>!</span></a></td>
+<td>CCT-2</td>
+</tr>
+
+<tr class="gradeA">
+<td>Danza</td>
+<td>Ballet</td>
+<td class="center" >2</td>
+<td class="center" >30</td>
+<td align="center" ><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb"  >Valeria Teissier Delgado</a></td>
+<td align="center">Lunes y Miércoles</td>
+<td>16:30-18:00</td>
+<td>CCT-2</td>
+</tr>
+
+<tr class="gradeA">
+<td>Danza</td>
+<td>Break Dance</td>
+<td class="center" >1</td>
+<td class="center" >30</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Jesús Alberto Delgado Chávez
+</a></td>
+<td align="center">Lunes y Miércoles</td>
+<td>10:30-12:00</td>
+<td>CCT-2</td>
+</tr>   
+   
+   <tr class="gradeA">
+<td>Danza</td>
+<td>Break Dance</td>
+<td class="center" >2</td>
+<td class="center" >30</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Miguel Moreno
+</a></td>
+<td align="center">Martes y Jueves</td>
+<td>15:00-16:30</td>
+<td>CCT-2</td>
+</tr>  
+   
+<tr class="gradeA">
+<td>Danza</td>
+<td>Danza Contemporánea</td>
+<td class="center" >1</td>
+<td class="center" >30</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb"  >Sunny Cécile Rawls Savoy</a></td>
+<td align="center">Miércoles y Viernes</td>
+<td>09:00-10:30</td>
+<td>CCT-2</td>
+</tr>
+
+
+
+<tr class="gradeA">
+<td>Danza</td>
+<td>Danzas Árabes</td>
+<td class="center" >1</td>
+<td class="center" >30</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb"  >Virginia Elena Gamboa Villa</a></td>
+<td align="center">Lunes y Miércoles</td>
+ <td>13:30-15:00</td>
+<td>CCT-1</td>
+</tr>
+ 
+<tr class="gradeA">
+<td>Danza</td>
+<td>Danzas Árabes</td>
+<td class="center" >2</td>
+<td class="center" >30</td>
+<td align="center" ><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb"  >Virginia Elena Gamboa Villa</a></td>
+<td align="center">Lunes y Miércoles</td>
+<td>16:30-18:00</td>
+<td>CCT-1</td>
+</tr>
+
+<tr class="gradeA">
+<td>Danza</td>
+<td>Danzas Polinesias</td>
+<td class="center" >1</td>
+<td class="center" >12</td>
+<td align="center" ><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb"  >Alejandra González Miyamoto</a></td>
+<td align="center">Lunes y Miércoles</td>
+<td>18:00-19:30</td>
+<td>RE-104</td>
+</tr>
+  
+<tr class="gradeA">
+<td>Danza</td>
+<td>Flamenco 1(Principiantes)</td>
+<td class="center" >1</td>
+<td class="center" >12</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Sabás Enrique Santos Casso</a></td>
+<td align="center">	Martes y Jueves</td>
+<td>12:00-13:30</td>
+<td>RE-104</td>
+</tr>
+  
+  
+<tr class="gradeA">
+<td>Danza</td>
+<td>Flamenco</td>
+<td class="center" >2</td>
+<td class="center" >12</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Sabás Enrique Santos Casso
+</a></td>
+<td align="center">Martes y Jueves</td>
+<td>10:30-12:00</td>
+<td>RE-104</td>
+</tr> 
+
+<tr class="gradeA">
+<td>Danza</td>
+<td>Folklore</td>
+<td class="center" >1</td>
+<td class="center" >30</td>
+<td align="center" ><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Eloisa Hernández</a></td>
+<td align="center">Lunes y Miércoles</td>
+<td>18:00-19:30</td>
+<td>CCT-2</td>
+</tr>
+
+<tr class="gradeA">
+<td>Danza</td>
+<td>Folklore</td>
+<td class="center" >2</td>
+<td class="center" >30</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb"  >Alma Delia Ramos Flores</a></td>
+<td align="center">Martes y Jueves</td>
+<td>16:30-18:00</td>
+<td>CCT-2</td>
+</tr>
+
+<tr class="gradeA">
+<td>Danza</td>
+<td>Folklore</td>
+<td class="center" >3</td>
+<td class="center" >30</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb"  >Armando Santillán Montalvo</a></td>
+<td align="center">Lunes y Miércoles</td>
+<td>18:00-19:30</td>
+<td>CCT-1</td>
+</tr>
+
+<tr class="gradeA">
+<td>Danza</td>
+<td><a class="fixedTip exampleTip" title="8 a 12 años">Folklore niñas<span>!</span></a></td>
+<td class="center" >3</td>
+<td class="center" >16</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb"  >Valeria Flores Coronado </a></td>
+<td align="center">Miércoles y Viernes</td>
+<td>15:00-16:30</td>
+<td>RE-104</td>
+</tr>
+
+<tr class="gradeA">
+<td>Danza</td>
+<td>Hip Hop</td>
+<td class="center" >1</td>
+<td class="center" >30</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb"  >Hildamaría Fernandez González </a></td>
+<td align="center">Martes y Jueves</td>
+<td>13:30-15:00</td>
+<td>CCT-2</td>
+</tr>
+  
+<tr class="gradeA">
+<td>Danza</td>
+ <td >Hip Hop</td>
+<td  class="center" >2</td>
+<td class="center" >30</td>
+<td   align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb"  >Hildamaría Fernandez González</a></td>
+<td   align="center">Miércoles y Viernes</td>
+<td>15:00-16:30</td>
+<td>CCT-2</td>
+</tr>
+ 
+<tr class="gradeA">
+<td>Danza</td>
+ <td >Hip Hop</td>
+<td  class="center" >3</td>
+<td class="center" >30</td>
+<td align="center" ><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb"  >Jaison Pons</a></td>
+<td align="center">Lunes y Viernes</td>
+   <td><a class="fixedTip exampleTip" title="Lunes">12:00-13:30 <span>!</span></a><br /><a class="fixedTip exampleTip" title="Viernes">13:30-15:00 <span>!</span></a></td>
+<td>CCT-2</td>
+</tr> 
+                                          
+
+<tr class="gradeA">
+<td>Danza</td>
+ <td >Jazz contemporáneo</td>
+ <td  class="center" >NA</td>
+ <td class="center" >30</td>
+<td   align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb"  >Laura González
+</a></td>
+<td   align="center">Martes y Jueves</td>
+<td>12:00-13:30</td>
+<td>CCT-2</td>
+</tr>
+
+<tr class="gradeA">
+<td>Danza</td>
+<td>Jazz básico p/hombres o Danza contemporánea para hombres</td>
+<td  class="center" >1</td>
+<td class="center" >30</td>
+<td align="center" ><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Roberto Rodríguez Caballero</a></td>
+<td align="center">Martes y Jueves</td>
+<td>10:30-12:00</td>
+<td>CCT-2</td>
+</tr>
+<!--
+<tr class="gradeA">
+<td>Danza</td>
+<td>Jazz Lírico</td>
+<td  class="center" >4</td>
+<td class="center" >30</td>
+<td align="center" ><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Dulce María Cházaro Pérez </a></td>
+<td align="center">Lunes y Miércoles</td>
+<td >10:30-12:00</td>
+<td >CCT-1</td>
+</tr>
+-->
+
+
+<tr class="gradeA">
+<td>Danza</td>
+<td>Jazz</td>
+<td  class="center" >2</td>
+<td class="center" >30</td>
+<td  align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb"  >Roberto Rodríguez Caballero 
+</a></td>
+<td  align="center">Lunes y Viernes</td>
+<td><a class="fixedTip exampleTip" title="Lunes">12:00-13:30 <span>!</span></a><br /><a class="fixedTip exampleTip" title="Viernes">13:30-15:00 <span>!</span></a></td>
+<td>CCT-1</td>
+</tr>
+   
+<tr class="gradeA">
+<td>Danza</td>
+<td>Jazz Musical</td>
+<td class="center" >3</td>
+<td class="center" >30</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb">Roberto Rodríguez Caballero 
+</a></td>
+<td align="center">Martes y Jueves</td>
+<td>12:00-13:30</td>
+<td>CCT-1</td>
+</tr>   
+
+<tr class="gradeA">
+<td>Danza</td>
+<td>Jazz Lírico</td>
+<td class="center" >4</td>
+<td class="center" >30</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Dulce María Cházaro Pérez </a></td>
+<td align="center"> Miércoles y Viernes</td>
+<td>12:00-13:30</td>
+<td>CCT-1</td>
+</tr>   
+
+<tr class="gradeA">
+<td>Danza</td>
+<td>Salsa A</td>
+<td class="center" >1</td>
+<td class="center" >30</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb"  >Miguel Ángel Meléndez</a></td>
+<td align="center">Miércoles y Viernes</td>
+<td>09:00-10:30</td>
+<td>CCT-1</td>	
+</tr>
+
+<tr class="gradeA">
+<td>Danza</td>
+<td>Salsa B</td>
+<td class="center" >2</td>
+<td class="center" >30</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Hector Montes de Oca</a></td>
+<td align="center">Lunes, Miércoles y Viernes</td>
+<td>08:00-09:00</td>
+<td>CCT-2</td>	
+</tr>
+
+<tr class="gradeA">
+<td>Danza</td>
+<td>Salsa</td>
+<td class="center" >3</td>
+<td class="center" >30</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Mayra Yazmin Rodríguez Jiménez</a></td>
+<td align="center">Martes y Jueves</td>
+<td>18:00-19:30</td>
+<td>CCT-1</td>	
+</tr>
+
+<!-- 
+<tr class="gradeA">
+<td>Danza</td>
+<td>Salsa</td>
+<td class="center" >3</td>
+<td align="center">YC3111</td>
+ <td align="center" ><a href="albino.html" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Albino Vargas Ozuna </a></td>
+<td align="center">Lunes y Miércoles</td>
+<td>18:00-19:30</td>
+<td>CCT-1</td>  
+</tr>
+-->
+<tr class="gradeA">
+<td>Danza</td>
+<td>Tango</td>
+<td class="center" >1</td>
+<td class="center" >30</td>
+<td align="center" ><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb"  >Paulo Mecchia</a></td>
+<td align="center">Martes y Jueves</td>
+<td >15:00-16:30</td>
+<td >CCT-1</td>  
+</tr>
+
+<tr class="gradeA">
+<td>Danza</td>
+<td>Tango</td>
+<td class="center" >2</td>
+<td class="center" >30</td>
+<td align="center" ><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb"  >Paulo Mecchia</a></td>
+<td align="center">Martes y Jueves</td>
+<td >16:30-18:00</td>
+<td >CCT-1</td>  
+</tr>
+
+<tr class="gradeA">
+<td>Danza</td>
+<td>Zumba A</td>
+<td class="center" >1</td>
+<td class="center" >30</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb"  >Jesús Hernández Quiroz </a></td>
+<td align="center">Martes y Jueves</td>
+<td>13:30-15:00</td>
+<td>CCT-1</td>
+</tr>
+
+<tr class="gradeA">
+<td>Danza</td>
+<td>Zumba B</td>
+<td class="center" >1</td>
+<td class="center" >30</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb"  >Manuel Medina Mijares </a></td>
+<td align="center">Martes y Jueves</td>
+<td>18:00-19:30</td>
+<td>CCT-2</td>
+</tr> 
+
+<!--
+
+<tr class="gradeA">
+<td>Danza</td>
+<td>Zumba C</td>
+<td class="center" >1</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb"  >Adrán Medina</a></td>
+<td align="center">Martes y Jueves</td>
+<td>18:00-19:30</td>
+<td>RE-104</td>
+</tr>   
+-->
+     
+<tr class="gradeA">
+<td>Danza</td>
+<td><a class="fixedTip exampleTip" title="Para las mamás de los alumnos">Salsa Señoras <span>!</span></a></td>
+<td class="center" >1</td>
+<td class="center" >30</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb"  >Miguel Ángel Meléndez García</a></td>
+<td align="center">Martes y Jueves</td>
+<td>9:00-10:30</td>
+<td>CCT-2</td>
+</tr>
+ <!-- 
+<tr class="gradeA">
+<td>Danza</td>
+<td>Jazz Señoras<a class="tooltip" name="Para las mamás de los alumnos" ><img  src="images/icons/info_s.png" width="17" height="18"></a></td>
+<td class="center" >1</td>
+<td align="center" >NA</td>
+<td align="center"><a href="fausti.html" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Armando Fausti Garza</a></td>
+<td align="center">Martes y Jueves</td>
+<td>07:30-09:00</td>
+<td>CCT-2</td>
+</tr>
+ --> 
+<tr class="gradeA">
+<td>Danza</td>
+<td><a class="fixedTip exampleTip" title="Niños de 8 a 11 años">Bailes Latinos Niñ@s <span>!</span></a></td>
+<td class="center" >1</td>
+<td class="center" >16</td>
+<td  align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb">Carolina Almaguer</a></td>
+<td  align="center">Martes y Jueves</td>
+<td>15:00-16:30</td>
+<td>RE-014</td>
+</tr>
+
+  
+<tr class="gradeA">
+<td>Danza</td>
+<td><a class="fixedTip exampleTip" title="Niñ@s de 8 a 11 años con 11 meses">Hip Hop Niñ@s <span>!</span></a></td>
+<td class="center" >1</td>
+<td class="center" >16</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb"  >Andrea García</a></td>
+<td align="center">Lunes y Miércoles</td>
+<td>16:30-18:00</td>
+<td>RE-104</td>
+</tr>  
+
+
+<tr class="gradeA">
+<td>Danza</td>
+<td><a class="fixedTip exampleTip" title="Niñas de 5 a 6 años">Jazz Niñas <span>!</span></a></td>
+<td class="center" >1</td>
+<td class="center" >16</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Irma Laura Serna Treviño
+</a></td>
+<td align="center">Martes y Jueves</td>
+<td>16:30-18:00</td>
+<td>RE-104</td>
+</tr>  
+ 
+<tr class="gradeA">
+<td>Danza</td>
+<td><a class="fixedTip exampleTip" title="Niñas de 7 a 8 años">Jazz Niñas <span>!</span></a></td>
+<td class="center" >2</td>
+<td class="center" >16</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb"  >Valeria Teissier Delgado</a></td>
+<td align="center">Lunes y Viernes</td>
+<td><a class="fixedTip exampleTip" title="Lunes">15:00-16:30 <span>!</span></a><br><a class="fixedTip exampleTip" title="Viernes">16:30-18:00 <span>!</span></a></td>
+<td>RE-104</td>
+</tr>
+
+
+<tr class="gradeA">
+<td>Danza</td>
+<td><a class="fixedTip exampleTip" title="Niñas de 9 a 11 años">Jazz Niñas <span>!</span></a></td>
+<td class="center" >3</td>
+<td class="center" >16</td>
+<td align="center" ><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Irma Laura Serna Treviño
+</a></td>
+<td align="center">Martes y Jueves</td>
+<td>18:00-19:30</td>
+<td>RE-104</td>
+</tr>
+
+<tr class="gradeA">
+<td>Danza</td>
+<td><a class="fixedTip exampleTip" title="Niñas de 12 a 15 años">Jazz Adolescentes <span>!</span></a></td>
+<td class="center" >1</td>
+<td class="center" >30</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Alejandra Uriegas</a></td>
+<td align="center">Miércoles y Viernes</td>
+<td>15:00-16:30</td>
+<td>CCT-1</td>
+</tr>
+
+<tr class="gradeA">
+<td>Danza</td>
+<td>Street Jazz</td>
+<td class="center" >1</td>
+<td class="center" >30</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Laura González</a></td>
+<td align="center">Lunes y Viernes</td>
+<td><a class="fixedTip exampleTip" title="Lunes">09:00-10:30 <span>!</span></a><br><a class="fixedTip exampleTip" title="Viernes">10:30-12:00 <span>!</span></a></td>
+<td>CCT-1</td>
+</tr>
+
+<tr class="gradeB">
+<td>Música</td>
+<td><a class="fixedTip exampleTip" title="Clase Individual">Acordeón <span>!</span></a></td>
+<td class="center" >1</td>
+<td class="center" >Por disponibilidad del maestro</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Eloy Cavazos González</a></td>
+<td>NA</td>
+<td align="center"><a class="clickTip exampleTip">A reservar <span>!</span></a></td>
+<td>CCAV-1</td>
+</tr>
+ 
+ <!--
+ 
+<tr class="gradeB">
+<td>Música</td>
+<td><a class="fixedTip exampleTip" title="Clase Individual">Batería A <span>!</span></a></td>
+<td class="center" >1</td>
+<td align="center" ><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Roberto Hernández Vivero</a></td>
+<td align="center">NA</td>
+<td><a class="clickTip exampleTip">A reservar <span>!</span></a></td>
+<td>CCAV-1</td>
+</tr>
+ 
+ 
+<tr class="gradeB">
+<td>Música</td>
+<td><a class="fixedTip exampleTip" title="Clase Individual">Batería B <span>!</span></a></td>
+<td class="center" >1</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Noél Rafael Savón Favier</a></td>
+<td align="center">NA</td>
+<td><a class="clickTip exampleTip">A reservar <span>!</span></a></td>
+<td>CCAV-1</td>
+</tr>       
+ 
+ -->
+ <tr class="gradeB">
+<td>Música</td>
+<td><a class="fixedTip exampleTip" title="Clase Individual">Batería B <span>!</span></a></td>
+<td class="center" >1</td>
+<td class="center" >Por disponibilidad del maestro</td>
+<td align="center" ><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Noél Rafael Savón Favier</a></td>
+<td align="center">NA</td>
+<td><a class="clickTip exampleTip">A reservar <span>!</span></a></td>
+<td>CCAV-1</td>
+</tr>
+
+ <tr class="gradeB">
+<td>Música</td>
+<td><a class="fixedTip exampleTip" title="Clase Individual">Batería A <span>!</span></a></td>
+<td class="center" >1</td>
+<td class="center" >Por disponibilidad del maestro</td>
+<td align="center" ><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Raúl Sergio Carmona Olveda</a></td>
+<td align="center">NA</td>
+<td><a class="clickTip exampleTip">A reservar <span>!</span></a></td>
+<td>CCAV-1</td>
+</tr>
+
+ <tr class="gradeB">
+<td>Música</td>
+<td><a class="fixedTip exampleTip" title="Clase Individual">Batería B <span>!</span></a></td>
+<td class="center" >2</td>
+<td class="center" >Por disponibilidad del maestro</td>
+<td align="center" ><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Raúl Sergio Carmona Olveda</a></td>
+<td align="center">NA</td>
+<td><a class="clickTip exampleTip">A reservar <span>!</span></a></td>
+<td>CCAV-1</td>
+</tr>
+
+ <tr class="gradeB">
+<td>Música</td>
+<td><a class="fixedTip exampleTip" title="Clase Individual">Batería A <span>!</span></a></td>
+<td class="center" >2</td>
+<td class="center" >Por disponibilidad del maestro</td>
+<td align="center" ><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Noél Rafael Savón Favier</a></td>
+<td align="center">NA</td>
+<td><a class="clickTip exampleTip">A reservar <span>!</span></a></td>
+<td>CCAV-1</td>
+</tr>
+
+<tr class="gradeB">
+<td>Música</td>
+<td><a class="fixedTip exampleTip" title="Clase Individual">Batería C <span>!</span></a></td>
+<td class="center" >1</td>
+<td class="center" >Por disponibilidad del maestro</td>
+<td align="center" ><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Saulo Levi Velásquez  Córdova </a></td>
+<td align="center">NA</td>
+<td><a class="clickTip exampleTip">A reservar <span>!</span></a></td>
+<td>CCAV-1</td>
+</tr>
+
+<!--
+
+<tr class="gradeB">
+<td>Música</td>
+<td><a class="fixedTip exampleTip" title="Clase Individual">Batería A <span>!</span></a></td>
+<td class="center" >2</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Noél Rafael Savón Favier</a></td>
+<td align="center">NA</td>
+<td><a class="clickTip exampleTip">A reservar <span>!</span></a></td>
+<td>CCAV-1</td>
+</tr>
+
+                                     
+<tr class="gradeB">
+<td>Música</td>
+<td><a class="fixedTip exampleTip" title="Clase Individual">Batería B <span>!</span></a></td>
+<td class="center" >2</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Roberto Hernández Vivero </a></td>
+<td align="center">NA</td>
+<td><a class="clickTip exampleTip">A reservar <span>!</span></a></td>
+<td >CCAV-1</td>
+ </tr>
+
+ 
+<tr class="gradeB">
+<td>Música</td>
+<td>Cajón Flamenco/Peruano</td>
+<td class="center" >1</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >José Gerardo Rodríguez Cortez</a></td>
+<td align="center">Lunes y Miércoles</td>
+<td>16:30-18:00</td>
+<td>CCAV-13</td>
+</tr> 
+  -->
+ 
+<tr class="gradeB">
+<td>Música</td>
+<td><a class="fixedTip exampleTip" title="Clase Individual">Canto 1A (clase individual)<span>!</span></a></td>
+<td class="center" >NA</td>
+<td class="center" >Por disponibilidad del maestro</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Jesús Alberto Márquez Rivas</a></td>
+<td align="center">NA</td>
+<td><a class="clickTip exampleTip">A reservar <span>!</span></a></td>
+<td>CCAV-15</td>
+</tr>
+ 
+<tr class="gradeB">
+<td>Música</td>
+<td><a class="fixedTip exampleTip" title="Clase Individual">Canto 1B (clase individual)<span>!</span></a></td>
+<td class="center" >NA</td>
+<td class="center" >Por disponibilidad del maestro</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Linda Gutierrez Ramírez
+</a></td>
+<td align="center">NA</td>
+<td><a class="clickTip exampleTip">A reservar <span>!</span></a></td>
+<td>CCAV-14</td>
+</tr>
+
+<tr class="gradeB">
+<td>Música</td>
+<td><a class="fixedTip exampleTip" title="Clase Individual">Flauta 1<span>!</span></a></td>
+<td class="center" >NA</td>
+<td class="center" >Por disponibilidad del maestro</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Luis Alfredo González Rodríguez
+</a></td>
+<td align="center">NA</td>
+<td><a class="clickTip exampleTip">A reservar <span>!</span></a></td>
+<td>CCAV-12</td>
+</tr>
+<!--
+<tr class="gradeB">
+<td>Música</td>
+<td>Djembé (Percusiones Africanas)</a></td>
+<td class="center" >NA</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Yuyi Guajardo
+</a></td>
+<td align="center">Sábado</td>
+<td>10:00-13:00</td>
+<td>CCAV-1</td>
+</tr>
+ 
+<tr class="gradeB">
+<td>Música</td>
+<td><a class="fixedTip exampleTip" title="Clase Individual">Contrabajo <span>!</span></a></td>
+<td class="center" >NA</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Claudia Arroyare
+</a></td>
+<td align="center">NA</td>
+<td><a class="clickTip exampleTip">A reservar <span>!</span></a></td>
+<td>Pendiente</td>
+</tr>
+ 
+-->
+ 
+ 
+<tr class="gradeB">
+<td>Música</td>
+<td>Gaita</td>
+<td class="center" >1</td>
+<td class="center" >Por disponibilidad del maestro</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Cesar Fernando Ibarra Ojeda
+</a></td>
+<td align="center">Sábado</td>
+<td><a class="clickTip exampleTip">A reservar <span>!</span></a></td>
+<td>CCAV-Patio</td>
+</tr>
+ 
+<tr class="gradeB">
+<td>Música</td>
+<td>Guitarra Clásica</td>
+<td class="center" >1</td>
+<td class="center" >12</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Orlando Jesús González Cavazos </a></td>
+<td align="center">Viernes</td>
+<td>15:00-18:00</td>
+<td>CCAV-3</td>
+</tr>
+     
+<tr class="gradeB">
+<td>Música</td>
+<td>Guitarra Eléctrica</td>
+<td class="center" >1</td>
+<td class="center" >12</td>
+<td align="center" ><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Orlando Jesús González Cavazos
+</a></td>
+<td align="center">Martes y Jueves</td>
+<td>18:00-19:30</td>
+<td>CCAV-3</td>
+</tr>
+   
+   
+<tr class="gradeB">
+<td>Música</td>
+<td><a class="fixedTip exampleTip" title="Clase Individual">Guitarra Improvisación <span>!</span></a></td>
+<td class="center" >1</td>
+<td class="center" >Por disponibilidad del maestro</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Claudio García González
+</a></td>
+<td align="center">NA</td>
+<td><a class="clickTip exampleTip">A reservar <span>!</span></a></td>
+<td>CCAV-1</td>
+</tr>
+ 
+ 
+<tr class="gradeB">
+<td>Música</td>
+<td>Guitarra Popular</td>
+<td class="center" >1</td>
+<td class="center" >12</td>
+<td  align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Orlando Jesús González Cavazos </a></td>
+<td align="center">Miércoles y Viernes</td>
+<td>18:00-19:30</td>
+<td>CCAV-3</td>
+</tr>
+  <!--
+<tr class="gradeB">
+<td>Música</td>
+<td><a class="fixedTip exampleTip" title="Clase Individual">Percusiones <span>!</span></a></td>
+<td class="center" >1</td>
+<td align="center" ><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Noél Rafael Savón Favier</a></td>
+<td align="center">NA</td>
+<td ><a class="clickTip exampleTip">A reservar <span>!</span></a></td>
+<td>CCAV-1</td>
+</tr>
+
+  
+<tr class="gradeB">
+<td>Música</td>
+<td><a class="fixedTip exampleTip" title="Clase Individual">Percusiones <span>!</span></a></td>
+<td class="center" >2</td>
+<td align="center" ><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Noél Rafael Savón Favier</a></td>
+<td align="center">NA</td>
+<td><a class="clickTip exampleTip">A reservar <span>!</span></a></td>
+<td>CCAV-1</td>
+</tr>
+  -->  
+  
+<tr class="gradeB">
+<td>Música</td>
+<td><a class="fixedTip exampleTip" title="Clase Individual">Piano (clase individual) <span>!</span></a></td>
+<td class="center" >NA</td>
+<td class="center" >Por disponibilidad del maestro</td>
+<td align="center" ><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >María de la Paz Wario Rodríguez</a></td>
+<td align="center">NA</td>
+<td ><a class="clickTip exampleTip">A reservar <span>!</span></a></td>
+<td>CCAV-9</td>
+</tr>
+  
+
+<tr class="gradeB">
+<td>Música</td>
+<td><a class="fixedTip exampleTip" title="Clase Individual">Piano (clase individual) <span>!</span></a></td>
+<td class="center" >NA</td>
+<td class="center" >Por disponibilidad del maestro</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Mauricio Ponce</a></td>
+<td align="center">NA</td>
+<td><a class="clickTip exampleTip">A reservar <span>!</span></a></td>
+<td>CCAV-9</td>
+</tr>
+ 
+<tr class="gradeB">
+<td>Música</td>
+<td><a class="fixedTip exampleTip" title="Clase Individual">Piano (clase individual) <span>!</span></a></td>
+<td class="center" >NA</td>
+<td class="center" >Por disponibilidad del maestro</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Carolina Olivares Luna</a></td>
+<td align="center">NA</td>
+<td><a class="clickTip exampleTip">A reservar <span>!</span></a></td>
+<td>CCAV-8</td>
+</tr>
+ 
+<tr class="gradeB">
+<td>Música</td>
+<td><a class="fixedTip exampleTip" title="Clase Individual">Saxofón <span>!</span></a></td>
+<td class="center" >NA</td>
+<td class="center" >Por disponibilidad del maestro</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Rogelio Arriaga García </a></td>
+<td align="center">NA</td>
+<td><a class="clickTip exampleTip">A reservar <span>!</span></a></td>
+<td>CCAV-7</td>
+</tr>
+                                          
+                                          
+<tr class="gradeB">
+<td>Música</td>
+<td><a class="fixedTip exampleTip" title="Clase Individual">Trompeta <span>!</span></a></td>
+<td class="center" >1</td>
+<td class="center" >Por disponibilidad del maestro</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Francisco Joel Quiñones Rodríguez</a></td>
+<td align="center">NA</td>
+<td><a class="clickTip exampleTip">A reservar <span>!</span></a></td>
+<td>CCAV-4</td>
+</tr>
+  
+  
+<tr class="gradeB">
+<td>Música</td>
+<td>Violín</td>
+<td class="center" >1</td>
+<td class="center" >Por disponibilidad del maestro</td>
+<td align="center" ><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Luis Alonso Flores González 
+</a></td>
+<td align="center">Lunes y Miércoles</td>
+<td>17:00-18:30</td>
+<td>CCAV-4</td>
+</tr>
+                                   
+                                   
+<tr class="gradeB">
+<td>Música</td>
+<td><a class="fixedTip exampleTip" title="Clase Individual">Violonchelo <span>!</span></a></td>
+<td class="center" >1</td>
+<td class="center" >Por disponibilidad del maestro</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Marieta Mihaylova Ivanova
+</a></td>
+<td align="center">NA</td>
+<td><a class="clickTip exampleTip">A reservar <span>!</span></a></td>
+<td>SS</td>
+</tr>
+
+<tr class="gradeC">
+<td>Teatro</td>
+<td>Actuación A</td>
+<td class="center" >1</td>
+<td class="center" >20</td>
+<td align="center" ><a href="#" rel="shadowbox;height=600;width=750"  tittle="mi curriculum" class="sb">Alejandro Morales Cantú</a></td>
+<td align="center">Martes y Jueves</td>
+<td>16:30-18:00</td>
+<td>RE-201</td>
+</tr>
+ 
+ 
+<tr class="gradeC">
+<td>Teatro</td>
+<td>Actuación B</td>
+<td class="center" >1</td>
+<td class="center" >20</td>
+<td align="center" ><a href="#" rel="shadowbox;height=490;width=520"  tittle="mi curriculum" class="sb" >Alejandro Morales Cantú </a></td>
+<td align="center">Martes y Jueves</td>
+<td>18:00-19:30</td>
+<td>RE-201</td>
+</tr>
+
+<tr class="gradeC">
+<td>Teatro</td>
+<td>Actuación A</td>
+<td class="center" >2</td>
+<td class="center" >20</td>
+<td   align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Gerardo Dávila</a></td>
+<td  align="center">Lunes y Sábado</td>
+<td><a class="fixedTip exampleTip" title="Lunes">15:00-16:30 <span>!</span></a><br>
+   <a class="fixedTip exampleTip" title="Sábado">11:00-12:30 <span>!</span></a></td>
+<td >RE-201</td>
+  </tr>
+  
+ 
+<tr class="gradeC">
+<td>Teatro</td>
+<td>Actuación B</td>
+<td class="center" >2</td>
+<td class="center" >20</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Gerardo Dávila</a></td>
+<td align="center">Lunes y Sábado</td>
+<td><a class="fixedTip exampleTip" title="Lunes">16:30-18:00 <span>!</span></a><br>
+<a class="fixedTip exampleTip" title="Sábado">12:30-14:00 <span>!</span></a></td>
+<td>RE-201</td>
+</tr>
+<!--
+<tr class="gradeC">
+<td>Teatro</td>
+<td>Actuación C</td>
+<td class="center" >2</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Gerardo Dávila</a></td>
+<td align="center">Miércoles</td>
+<td>15:00-18:00</td>
+<td>RE-201</td>
+</tr>
+-->
+<tr class="gradeC">
+<td>Teatro</td>
+<td>Actuación</td>
+<td class="center" >3</td>
+<td class="center" >20</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Gerardo Dávila</a></td>
+<td align="center">Lunes y Sábado</td>
+<td><a class="fixedTip exampleTip" title="Lunes">18:00-19:30 <span>!</span></a><br><a class="fixedTip exampleTip" title="Sábado">14:00-15:30 <span>!</span></a></td>
+<td >RE-201</td>
+
+ </tr>
+ 
+<tr class="gradeC">
+<td>Teatro</td>
+<td>Actuación en Inglés</td>
+<td class="center" >1</td>
+<td class="center" >20</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >César Aristóteles García García</a></td>
+<td align="center">Sábado</td>
+<td>11:00-14:00</td>
+<td>CIAP</td>
+</tr>
+
+
+
+
+<tr class="gradeD">
+<td>Artes Visuales</td>
+<td>Acuarela</td>
+<td class="center" >1</td>
+<td class="center" >10</td>
+<td  align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Jorge Flores López</a></td>
+<td  align="center">Miércoles</td>
+<td >16:30-19:30</td>
+<td >RE-110</td>
+</tr>
+  
+  
+<tr class="gradeD">
+<td>Artes Visuales</td>
+<td>Escultura en Cerámica 1A</td>
+<td class="center" >1</td>
+<td class="center" >10</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Jorge Flores López</a></td>
+<td align="center">Jueves</td>
+<td>16:30-19:30</td>
+<td>RE-110</td>
+</tr>
+
+<tr class="gradeD">
+<td>Artes Visuales</td>
+<td>Escultura en Cerámica 1B</td>
+<td class="center" >1</td>
+<td class="center" >10</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Jorge Flores López</a></td>
+<td align="center">Lunes</td>
+<td>18:00-21:00</td>
+<td>RE-110
+</tr>
+            
+<tr class="gradeD">
+<td>Artes Visuales</td>
+<td>Escultura en Cerámica 1C</td>
+<td class="center" >1</td>
+<td class="center" >10</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Jorge Flores López</a></td>
+<td align="center">Viernes</td>
+<td>10:00-13:00</td>
+<td>RE-110
+</tr>
+                             
+<tr class="gradeD">
+<td>Artes Visuales</td>
+<td>Pintura A</td>
+<td class="center" >1</td>
+<td class="center" >15</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >César Javier García Cavazos 
+</a></td>
+<td align="center">Martes</td>
+<td >16:30-19:30</td>
+ <td >RE-103</td> </tr>
+ 
+ 
+ 
+<tr class="gradeD">
+<td>Artes Visuales</td>
+<td>Pintura B</td>
+<td class="center" >1</td>
+<td class="center" >15</td>
+<td align="center" ><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >César Javier García Cavazos 
+</a></td>
+<td align="center">Viernes</td>
+<td>15:00-18:00</td>
+<td>RE-103</td></tr>
+
+<tr class="gradeE">
+<td>Gastronomía</td>
+<td>Cocina Básica A</td>
+<td class="center" >1</td>
+<td class="center" >10</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Amparo Flores Peña</a></td>
+<td align="center">Martes</td>
+<td>13:30-16:30</td>
+<td>RE-112 </td> 
+</tr>
+   
+  
+<tr class="gradeE">
+<td>Gastronomía</td>
+<td>Cocina Básica B</td>
+<td class="center" >1</td>
+<td class="center" >10</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Amparo Flores Peña</a></td>
+<td align="center">Martes</td>
+<td>16:30-19:30</td>
+<td>RE-112  </td> 
+</tr>
+ 
+<tr class="gradeE">
+<td>Gastronomía</td>
+<td>Cocina Internacional A</td>
+<td class="center">1</td>
+<td class="center" >10</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Lucila Guadalupe García de la Garza</a></td>
+<td align="center">Lunes</td>
+<td>13:30-16:30</td>
+<td>RE-112</td> 
+</tr>
+ 
+<tr class="gradeE">
+<td>Gastronomía</td>
+<td>Cocina Internacional B</td>
+<td class="center">1</td>
+<td class="center" >10</td>
+<td align="center" ><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Lucila Guadalupe García de la Garza</a></td>
+<td align="center">Lunes</td>
+<td>16:30-19:30</td>
+<td>RE-112</td> 
+</tr>
+
+
+<tr class="gradeE">
+<td>Gastronomía</td>
+<td>Cocina Internacional C</td>
+<td class="center">1</td>
+<td class="center" >10</td>
+<td align="center" ><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Lucila Guadalupe García de la Garza
+</a></td>
+<td align="center">Miércoles</td>
+<td>13:30-16:30</td>
+<td>RE-112</td> 
+</tr>
+<!--
+
+<tr class="gradeE">
+<td>Gastronomía</td>
+<td>Cocina Internacional D</td>
+<td class="center">1</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb">Lucila Guadalupe García de la Garza</a></td>
+<td align="center">Miércoles</td>
+<td>16:30-19:30</td>
+<td>RE-112</td> 
+</tr>
+-->
+
+<tr class="gradeE">
+<td>Gastronomía</td>
+<td>Cocina Mediterránea A</td>
+<td class="center">1</td>
+<td class="center" >10</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Pamela Rech</a></td>
+<td align="center">Jueves</td>
+<td>13:30-16:30</td>
+<td>RE-112</td> 
+ </tr>
+                                        
+                                      
+<tr class="gradeE">
+<td>Gastronomía</td>
+<td>Cocina Mediterránea B</td>
+<td class="center">1</td>
+<td class="center" >10</td>
+<td align="center" ><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Pamela Rech</a></td>
+<td align="center">Jueves</td>
+<td>16:30-19:30</td>
+<td>RE-112 </td> 
+</tr>
+
+<tr class="gradeE">
+<td>Gastronomía</td>
+<td>Repostería</td>
+<td class="center">1</td>
+<td class="center" >10</td>
+<td align="center" ><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Lucila Guadalupe García de la Garza</a></td>
+<td align="center">Miércoles</td>
+<td>16:30-19:30</td>
+<td>RE-112 </td> 
+</tr>
+
+<tr class="gradeE">
+<td>Gastronomía</td>
+<td>Cocina práctica para estudiantes</td>
+<td class="center">1</td>
+<td class="center" >10</td>
+<td align="center" ><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Mayte Santa Ana</a></td>
+<td align="center">Miércoles</td>
+<td>10:00-12:00</td>
+<td>RE-112 </td> 
+</tr>
+<!--
+<tr class="gradeE">
+<td>Gastronomía</td>
+<td>Mexican Cooking A</td>
+<td class="center">1</td>
+<td align="center">YC0402</td>
+<td align="center" ><a href="mariateresa.html" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >María Teresa Martínez Villanueva</a></td>
+<td align="center">Miércoles</td>
+<td>11:00-13:00</td>
+<td>RE-112</td> 
+</tr>
+ 
+<tr class="gradeE">
+<td>Gastronomía</td>
+<td>Introducción al mundo del vino A</td>
+<td class="center">1</td>
+<td align="center" ><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Marcela Palma</a></td>
+<td align="center">Martes y Jueves</td>
+<td>17:00-18:00</td>
+<td>RE-101</td> 
+</tr>
+
+<tr class="gradeE">
+<td>Gastronomía</td>
+<td>Introducción al mundo del vino B</td>
+<td class="center">1</td>
+<td align="center" ><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Marcela Palma</a></td>
+<td align="center">Lunes y Miércoles</td>
+<td>18:00-19:00</td>
+<td>RE-101</td> 
+</tr>
+-->
+
+<tr class="gradeF">
+<td>Literatura</td>
+<td>Borregos Literarios</td>
+<td class="center">1</td>
+<td class="center" >24</td>
+<td align="center"><a href="hernan.html" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Felipe Montes e Issac López Reyna</a></td>
+<td align="center">Cada 15 días, iniciando el 10 de agosto</td>
+<td>15:00-18:00</td>
+<td></td>
+</tr>
+
+
+
+
+<tr class="gradeF">
+<td>Misceláneos</td>
+<td>Maquillaje y Peinados</td>
+<td class="center">1</td>
+<td class="center" >12</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Alma Delia Ramos Flores</a></td>
+<td align="center">Martes y Jueves</td>
+<td>18:00-19:30</td>
+<td>C-ALE 3</td>
+</tr>
+                                         
+<tr class="gradeF">
+<td>Misceláneos</td>
+<td>Staff A Grupo 2</td>
+<td class="center">1</td>
+<td class="center" >30</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >David Molina Garza </a></td>
+<td align="center">Viernes</td>
+<td>19:30-21:00</td>
+<td>PC</td>
+</tr>
+                                        
+<!--                               
+<tr class="gradeF">
+<td>Misceláneos</td>
+<td>Staff B</td>
+<td class="center">1</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >David Molina Garza </a></td>
+<td align="center">Viernes</td>
+<td>18:00-19:30</td>
+<td >Gi-206</td>
+</tr>
+-->
+<tr class="gradeG">
+<td>Juegos de Mesa</td>
+<td>Ajedrez</td>
+<td class="center">1</td>
+<td class="center" >24</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Jaime Antonio Peña Ruiz </a></td>
+<td align="center">Jueves y Viernes</td>
+<td>18:00-19:30</td>
+<td>CC</td>
+</tr>
+
+<!--
+<tr class="gradeG">
+<td>Juegos de Mesa</td>
+<td>Magia con Cartas A</td>
+<td class="center">1</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >David González Flores</a></td>
+<td align="center">Viernes y Sábado</td>
+<td><a class="fixedTip exampleTip" title="VIernes">18:00-20:00 <span>!</span></a><br /><a class="fixedTip exampleTip" title="Sábado">12:00-13:00 <span>!</span></a></td>
+<td>CCAV-4</td>
+</tr> -->
+                                      
+                                      
+                                      
+<tr class="gradeG">
+<td>Juegos de Mesa</td>
+<td>Magia con Cartas 1</td>
+<td class="center">1</td>
+<td class="center" >14</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Hernán González Flores  </a></td>
+<td align="center">Sábado</td>
+<td>10:00-13:00</td>
+<td>CCAV-4</td>
+</tr>
+                  
+<tr class="gradeH">
+<td>Clubes Musicales</td>
+<td>Jazz y Blues</td>
+<td>NA</td>
+<td class="center" >12</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Orlando Jesús González Cavazos </a></td>
+<td align="center">Sábado</td>
+<td>13:00-16:00</td>
+<td>CCAV-1</td>
+</tr>
+
+
+<tr class="gradeH">
+<td>Clubes Musicales</td>
+<td>Club Latinoamericano</td>
+<td>NA</td>
+<td class="center" >12</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Luis Raúl López Levi</a></td>
+<td align="center">Jueves</td>
+<td>18:00-21:00</td>
+<td>CCAV-8</td>
+</tr>
+                                         
+                                         
+<tr class="gradeH">
+<td>Clubes Musicales</td>
+<td>Mariachi</td>
+<td>NA</td>
+<td class="center" >18</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Luis Alonso Flores González </a></td>
+<td align="center">Miércoles</td>
+<td>18:30-21:30</td>
+<td >CCAV-4</td>
+</tr>
+               
+               
+<tr class="gradeH">
+<td>Clubes Musicales</td>
+<td>Norteño</td>
+<td>NA</td>
+<td class="center" >18</td>
+<td align="center" ><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Eloy Cavazos González</a></td>
+<td align="center">Martes</td>
+<td>18:00-21:00</td>
+<td>CCAV-4</td>
+</tr>
+                                          
+
+
+<tr class="gradeH">
+<td>Clubes Musicales</td>
+<td>Rock</td>
+<td>NA</td>
+<td class="center" >12</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Orlando Jesús González Cavazos 
+</a></td>
+<td align="center">Sábado</td>
+<td>16:00-19:00</td>
+<td>CCAV-1</td>
+</tr>
+ 
+<tr class="gradeH">
+<td>Clubes Musicales</td>
+<td>Reggae</td>
+<td>NA</td>
+<td class="center" >12</td>
+<td><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb">Gilberto Lem</a></td>
+<td>Sábado</td>
+<td>10:00-12:00</td>
+<td>CCAV-1</td>
+</tr>                                         
+                                     
+<tr class="gradeH">
+<td>Clubes Musicales</td>
+<td>Rondalla</td>
+<td>NA</td>
+<td class="center" >12</td>
+<td><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb">Luis Alonso Flores González</a></td>
+<td>Lunes</td>
+<td>18:30-21:30</td>
+<td>CCAV-1</td>
+</tr>                                         
+
+<tr class="gradeH">
+<td>Clubes Musicales</td>
+<td>Country</td>
+<td>NA</td>
+<td class="center" >18</td>
+<td><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb">Luis Alberto Segovia Jimenez</a></td>
+<td>Lunes y Miércoles</td>
+<td>18:00 a 19:30</td>
+<td>CCAV-4</td>
+</tr> 
+<!-- 
+
+<tr class="gradeI">
+<td>Grupos Representativos</td>
+<td>Banda Sonido Azul</td>
+<td>NA</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Francisco Quiñonez </a></td>
+<td align="center">Lunes y Viernes</td>
+<td>16:30-20:30	</td>
+<td>CCAV</td>
+</tr>    
+ 
+<tr class="gradeI">
+<td>Grupos Representativos</td>
+<td>Compañía de Danza Contemporánea</td>
+<td>NA</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Sunny Cecile Savoy Rawls</a></td>
+<td align="center">Miércoles y Viernes</td>
+<td>07:30-09:00</td>
+<td>CCT-1</td>
+</tr>
+    
+ 
+<tr class="gradeI">
+<td>Grupos Representativos</td>
+<td>Compañía de Danza Contemporánea</td>
+<td>NA</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Sunny Cecile Savoy Rawls</a></td>
+<td align="center">Martes y Viernes</td>
+<td><a class="fixedTip exampleTip" title="Martes">19:30-21:00 <span>!</span></a><br /><a class="fixedTip exampleTip" title="Viernes">18:00-19:30 <span>!</span></a></td>
+ <td>CCT-1</td>
+ </tr>
+
+ 
+<tr class="gradeI">
+<td>Grupos Representativos</td>
+<td>Compañía de Danza Contemporánea</td>
+<td>NA</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Sunny Cecile Savoy Rawls</a></td>
+<td align="center">Martes y Jueves</td>
+<td>07:30-10:30</td>
+<td>CCT-1</td>
+</tr>
+
+<tr class="gradeI">
+<td>Grupos Representativos</td>
+<td >Concierto Ensamble Coro</td>
+<td>NA</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Hugo Garza Leal</a></td>
+<td align="center">Martes, Jueves y Viernes</td>
+<td>13:30-15:00</td>
+<td>CCAV-1 </td>
+</tr>
+
+<tr class="gradeI">
+<td>Grupos Representativos</td>
+<td >Concierto Ensamble Baile</td>
+<td>NA</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Hugo Garza Leal</a></td>
+<td align="center">Lunes y Miércoles</td>
+<td>20:00-21:00</td>
+<td >INDE</td>
+</tr>
+                                  
+                                          
+<tr class="gradeI">
+<td>Grupos Representativos</td>
+<td><a class="fixedTip exampleTip" title="Requisito haber cursado YC0112">Grupo Representativo Staff <span>!</span></a></td>
+<td>NA</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >David Molina Garza</a></td>
+<td align="center">Viernes</td>
+<td>16:30 18:00</td>
+<td >Gi-206</td>
+</tr>
+
+
+<tr class="gradeI">
+<td>Grupos Representativos</td>
+<td>Grupo Representativo Teatro Músical</td>
+<td>NA</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Luis Franco</a></td>
+<td align="center">Sábado</td>
+<td>15:00-19:00</td>
+<td>RE-201</td>
+</tr>      
+                         
+         
+<tr class="gradeI">
+<td>Grupos Representativos</td>
+<td >Orquesta Raíces</td>
+<td>NA</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Juan Daniel Cabrera Ladrón de Guevara</a></td>
+<td align="center">Lunes</td>
+<td>18:00-21:00</td>
+<td>CCAV-12</td>
+</tr>     
+
+              
+ 
+<tr class="gradeI">
+<td>Grupos Representativos</td>
+<td >Orquesta Sinfónica Juvenil ITESM</td>
+<td>NA</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Hazael Martínez López</a></td>
+<td align="center">Martes, Jueves y Domingo</td>
+<td><a class="fixedTip exampleTip" title="Martes y Jueves">19:00-21:00 <span>!</span></a><br><a class="fixedTip exampleTip" title="Domingo">10:00-14:00 <span>!</span></a></td>
+<td>SS</td>
+</tr>    
+ 
+                                        
+        
+ 
+<tr class="gradeI">
+<td>Grupos Representativos</td>
+<td>Raíces Alfa</td>
+<td>NA</td>
+<td align="center"><a href="#" rel="shadowbox;height=450;width=500"  tittle="mi curriculum" class="sb" >Eloisa Hernández Gutierrez</a></td>
+<td align="center">Jueves</td>
+<td>19:30-21:00</td>
+<td>CCT-2</td>
+</tr>       
+-->
+</tbody>
+</table>
+			</div> 
+                    </div>  
+				</div> 
+ 				<script type="text/javascript"> 
+  					$("#cursosnav").idTabs(); 
+				</script>
+        </div>	 
+       	<div id="cartittle">
+            	<h1><span>SEMESTRE</span> CARTELERA</h1>
+        </div>
+               <div id="jsCarousel">
+                <div><a ><img src="images/iconos/icono_01.jpg"/></a><br/></div>
+                <div><a ><img src="images/iconos/icono_02.jpg" /></a><br /></div>
+                <div><a ><img src="images/iconos/icono_03.jpg" /></a><br /></div>
+                <div><a ><img src="images/iconos/icono_04.jpg" /></a><br /></div>
+                <div><a ><img src="images/iconos/icono_05.jpg" /></a><br /></div>
+                <div><a ><img src="images/iconos/icono_06.jpg" /></a><br /></div>
+                <div><a ><img src="images/iconos/icono_07.jpg" /></a><br /></div>
+                <div><a ><img src="images/iconos/icono_08.jpg" /></a><br /></div>
+                <div><a ><img src="images/iconos/icono_09.jpg" /></a><br /></div>
+                <div><a ><img src="images/iconos/icono_10.jpg" /></a><br /></div>
+                <div><a ><img src="images/iconos/icono_11.jpg" /></a><br /></div>
+                <div><a ><img src="images/iconos/icono_12.jpg" /></a><br /></div>
+                <div><a ><img src="images/iconos/icono_13.jpg" /></a><br /></div>
+                <div><a ><img src="images/iconos/icono_14.jpg" /></a><br /></div>
+                <div><a ><img src="images/iconos/icono_15.jpg" /></a><br /></div>
+                <div><a ><img src="images/iconos/icono_16.jpg" /></a><br /></div>
+                <div><a ><img src="images/iconos/icono_17.jpg" /></a><br /></div>
+                <div><a ><img src="images/iconos/icono_18.jpg" /></a><br /></div>
+                <div><a ><img src="images/iconos/icono_19.jpg" /></a><br /></div>
+                <div><a ><img src="images/iconos/icono_20.jpg" /></a><br /></div>
+                <div><a ><img src="images/iconos/icono_21.jpg" /></a><br /></div>
+                <div><a ><img src="images/iconos/icono_22.jpg" /></a><br /></div>
+        </div>
+    <script src="js/jsCarousel.js" type="text/javascript"></script>
+    <script type="text/javascript">
+            $(document).ready(function() {
+                $('#jsCarousel').jsCarousel({ onthumbnailclick: function(src) { alert(src); }, autoscroll: true,itemstodisplay:7 });
+            });
+     </script>
+        	<div id="publicidad">
+            	<ul class="anuncios">
+                	<li><a target="_blank" href="envivomet/index.html"><img src="images/misc/anuncio_01.jpg" width="250" height="100" /></a></li>
+                    <li><a target="_blank" href=" http://www.wix.com/staffmty/backstage#!__informacion-para-grupos-y-escuelas"><img src="images/misc/anuncio_02.jpg" width="250" height="100" /></a></li>
+                     <li><a target="_blank" href="http://staffmty.wix.com/inicio/"><img src="images/misc/logo_staff.jpg" width="250" height="100" /></a></li>
+                </ul>
+          </div>
+       </div>
+	</div>
+    <div id="footer">
+		<ul id="footernav">
+        	<li class=""><a class="" href="acerca.html">¿QUIÉNES SOMOS?</a></li>
+            <li class=""><a class="" href="acerca.html">DIRECTORIO</a></li>
+            <li class=""><a class="" href="acerca.html">ORGANIGRAMA</a></li>
+       
+            
+        </ul>
+        <ul id="contacto">
+        	<li style="border-right:none; padding-top:10px" class="pestaña"><strong>Contáctanos:</strong></li>
+            <li class="pestaña"><a target="_blank" href="http://www.facebook.com/difusionculturaltecmty" class="fb">Visítanos en Facebook</a></li>
+            <li class="pestaña"><a target="_blank" href="https://twitter.com/intent/user?screen_name=tecdifucultural" class="tweet">Síguenos en Twitter</a></li>
+            <li class="pestaña"><a target="_blank" href="mailto:jp.alvarez@itesm.mx" class="mail">Envíanos un Correo</a></li>
+        </ul>
+    	<p style="padding-top:50px;">Difusión Cultural del Tecnológico de Monterrey Campus Monterrey. <br />Ave. Eugenio Garza Sada 2501 Sur Col. Tecnológico C.P. 64849 (Segundo Piso Gimnasio Polivalente) | Monterrey, Nuevo León, México | Tel. +52 (81) 8358-2000<br />Derechos Reservados © Julio 2012</p>
+    </div>	
+</div>
+</body>
+</html>

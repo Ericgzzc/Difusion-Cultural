@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!--CSS-->
+	<link href="css/main.css" rel="stylesheet" type="text/css" />
+	<!--Javascripsts-->
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+	<script>
+		function initialize() {
+		  var mapOptions = {
+		    zoom: 17,
+		    center: new google.maps.LatLng(25.646181,-100.292516),
+		    mapTypeId: google.maps.MapTypeId.ROADMAP
+		  }
+		  var map_altavista = new google.maps.Map(document.getElementById('map-canvas'),
+		                                mapOptions);
+		  
+
+		  var image = 'images/butons/bandera.png';
+		  var myLatLng = new google.maps.LatLng(25.646181,-100.292516);
+		  
+		  var altavista = new google.maps.Marker({
+		      position: myLatLng,
+		      map: map_altavista,
+		      icon: image
+		  });
+		 
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
+	<title>Mapa Estadio Tecnológico | Difusión Cultural </title>
+</head>
+<body>
+	<div class="mapa" id="map-canvas"></div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!--CSS-->
+	<link href="css/main.css" rel="stylesheet" type="text/css" />
+	<!--Javascripsts-->
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/shadowbox.js"></script>
+	<script type="text/javascript" src="js/idtabs.min.js"></script>
+	
+    <script type="text/javascript">
+		Shadowbox.init();
+	</script>
+
+	<title>Cursos DC | Contacto</title>
+</head>
+<body class="contacto principal">
+	<div class="fixed">
+		<ul class="social right">
+	  		<li><a class="face" href="https://www.facebook.com/difusionculturaltecmty?fref=ts" target="_blank"></a></li>
+	  		<li><a class="tweet" href="https://twitter.com/intent/user?screen_name=tecdifucultural" target="_blank"></a></li>
+	  		<li class="last"><a class="youtube" href="https://www.youtube.com/user/TECDCMTY?feature=watch" target="_blank"></a></li>  
+	  	</ul>
+	 </div>
+	<header>
+		<div class="inner-940px">
+			<a href="../home.html" class="left" id="logodc"></a>
+			<a href="www.itesm.mx" target="_blank" class="right" id="logotec"></a>
+		</div>
+	</header>
+	<nav>
+		<div class="inner-940px">
+			<ul class="main sf-navbar sf-menu left">
+  				<li><a class="principal" href="index.html">Cursos y Clubes musicales</a></li>
+  				<!--<li><a class="verano" href="verano.html">Verano Tec</a></li>-->
+  				<li><a class="semestre" href="semestre.html">Cursos Tec</a></li>
+  				
+  				<li><a class="semestrekids" href="sem_externos.html">Cursos Externos</a></li>
+  				<li><a class="verano" href="sem_externos.html">Clubes musicales</a></li>
+  				<li class="contacto"><a class="selected contacto" href="contacto.html"></a></li>	
+  			</ul>
+  		</div>
+	</nav>
+	<script type="text/javascript">
+		jQuery(window).scroll(function() 
+			{
+				if(jQuery(window).scrollTop() > 160) {
+					jQuery("#subnav").addClass('fixeado');
+				}
+			else
+			{
+				jQuery("#subnav").removeClass('fixeado');
+			}
+		});
+	</script> 
+	
+	<div id="main">
+		<div id="content">
+			<div class="areas">
+				<div class="inner-940px">
+					<h1>Difusión Cultural Tec de Monterrey</h1>
+				</div>
+			</div>
+			<div class="inner-940px programas last">
+				<div class="costos clases">
+					<div class="title">
+						<h1>Forma de contacto</h1>
+					</div>
+					<form action="http://cgi.mty.itesm.mx/getcomments/getcomments.cgi" 
+					   method="post" name="postal" onsubmit=verificaNombre() id="postal">
+	                	<div class="nombre">
+	                   		<input placeholder="Nombre Completo" class="contacto-int" name="Nombre" type="text" id="Nombre" size="44">
+	                    </div>
+	                    <div class="nombre">
+	                    	<input placeholder="Correo Electrónico" class="contacto-int" name="e-mail" type="text" id="e-mail" size="44">
+	                    </div>
+	                    <div class="nombre">
+	                  		<input placeholder="Asunto" class="contacto-int" name="subject" type="text" id="subject" size="44">
+	                    </div>
+	                    <div class="nombre">
+	                    	<br>
+	                    	<textarea style="height:100px" placeholder="Escribe aquí tus comentarios..." class="contacto-int" name="sugerencias" cols="33" rows="5" id="sugerencias"></textarea>
+	                    </div>
+	                    <input id="borrar-btn" style="margin-top:5px" type="reset" name="Submit2" value="Borrar">
+	                    <input id="enviar-btn" style="margin-top:5px" type="submit" name="Submit" value="Enviar"> 
+	                   
+	                        <INPUT type=hidden value=luzellarl@itesm.mx name=_mailto>
+	                        <INPUT type=hidden value=Comentarios name=_mailsubj>
+	                        <INPUT type=hidden value=luzellarl@itesm.mx name=_errorsto>
+	                        <INPUT type=hidden value=/www/cgi/getcomments/ name=_comment_dir>
+	                        <INPUT type=hidden value=true name=_show>
+	                        <INPUT type=hidden value=all name=_mail_vals>
+	                        <INPUT type=hidden value=false name=_append>    
+	                 </form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="inner-940px">
+			<span class="left">Cursos Difusión Cultural Campus Monterrey Copyright 2013</span>
+			<span class="right bluemilk">Desarrollado por</span>
+		</div>
+	</div>
+</body>
+</html>
