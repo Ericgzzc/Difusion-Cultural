@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!--CSS-->
+	<link href="css/main.css" rel="stylesheet" type="text/css" />
+	<link href="vendors/css/superfish.css" rel="stylesheet" type="text/css" />
+	<link href="vendors/css/superfish-navbar.css" rel="stylesheet" type="text/css" />
+	<link href="vendors/css/ui/jquery.ui.tabs.css" rel="stylesheet" type="text/css" />
+	<link href="vendors/css/shadowbox.css" rel="stylesheet" type="text/css" />
+
+	<!--Javascripsts-->
+	<script type="text/javascript" src="vendors/js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="vendors/js/bjqs-1.3.min.js"></script>
+	<script type="text/javascript" src="vendors/js/superfish.js"></script>
+	<script type="text/javascript" src="vendors/js/ui/jquery.ui.core.min.js"></script>
+	<script type="text/javascript" src="vendors/js/ui/jquery.ui.widget.min.js"></script>
+	<script type="text/javascript" src="vendors/js/ui/jquery.ui.tabs.min.js"></script>
+	<script type="text/javascript" src="vendors/js/shadowbox.js"></script>
+	<title>Principal | Difusión Cultural</title>
+	
+		
+	
+
+</head>
+<body class="principal">
+	<div id="fb-root"></div>
+	<script>
+		(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1&appId=186532228183052";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+	<div id="menu"></div>
+	
+	<div id="main">
+		<div id="content">
+	
+
+			<div id="tabs" class="inner-940px cartelera">
+				<h1>Próximo <span>Eventos</span></h1>
+				<div class="calendario">
+					<div class="subnav">
+						<ul>
+							<li><a href="#resumen" class="selected">Sinópsis</a></li>
+							<li><a href="#funciones" class="">Funciones</a></li>			
+							<li><a href="#costos" class="">Costos</a></li>
+							
+						</ul>
+					</div>
+					
+				</div>
+
+				<div class="article article-cnt">
+					<div id="resumen">
+						<div>
+							<h2>Inaguración</h2>
+						
+							<p class="">
+								<span>
+									26 al 28 de Septiembre
+								</span>
+								Inauguración
+								Lugar: Escenario al aire libre del teatro de la ciudad 
+								Participan todos los grupos  
+								Horario: 19:30 hrs. (pendiente orden de programa)
+
+
+							</p>
+
+						
+							
+							<a class="right" href="https://www.facebook.com/events/360416864120596/?fref=ts" target="_blank">Ver evento en Facebook</a>
+							
+							<div class="fb-comments" data-href="https://www.facebook.com/events/360416864120596/?fref=ts" data-width="700"></div>
+
+						
+						</div>
+					</div>
+					
+					<div id="funciones">
+						<h2>Funciones</h2>
+						<ul class="border">
+							<li><span>Día</span></li>
+							<li><span>Hora</span></li>
+						</ul>
+						<ul class="">
+							<li>viernes 26 de septiembre</li>
+							<li>20:00</li>
+						</ul>
+						<ul class="">
+							<li>sábado 27 de septiembre</li>
+							<li>20:00</li>
+						</ul>
+						<ul class="borde">
+							<li>domingo 28 de septiembre</li>
+							<li>19:00</li>
+						</ul>
+						
+					</div>
+				
+					<div id="costos">
+						<h2>Costos</h2>
+						<ul class="border triple">
+							<li><span>Persona</span></li>
+							<li><span>Precio</span></li>
+						</ul>
+						<ul>
+							<li>Orquesta</li>
+							<li>$105.00</li>
+						</ul>
+						<ul>
+							<li>Luneta</li>
+							<li>$90.00</li>
+						</ul>
+						<ul class="border">
+							<li>Alumnos y Personal Tec (Aplica únicamente en Luneta)</li>
+							<li>$65.00</li>
+						</ul>
+
+					
+					</div>
+				</div>
+			</div>
+			
+
+			
+
+
+		</div>
+	</div>
+
+	<div id="footer">
+		<div class="inner-940px">
+			<span class="left">Difusión Cultural Campus Monterrey Copyright 2013</span>
+			<span class="right bluemilk">Desarrollado por</span>
+		</div>
+	</div>
+</body>
+</html>
+<!--jQuery functions-->
+	<script type="text/javascript">
+		$(function() {
+			$( "#tabs" ).tabs();
+
+		});
+	</script>
+	<script type="text/javascript"> 
+		Shadowbox.init({ language: 'en', players: ['img', 'html', 'iframe', 'qt', 'wmp', 'swf', 'flv'] }); 
+	</script>
+	<script tex="type/javascript">
+        jQuery(document).ready(function($) {
+          $('#slider').bjqs({
+            animtype      : 'slide',
+            height        : 480,
+            width         : 940,
+            animspeed : 10000,
+            responsive    : false,
+            nexttext      : '',
+            prevtext      : '',
+            hoverpause : true
+          });
+        });
+    </script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {	
+			jQuery('ul.sf-menu').superfish({	
+		 		speed:       1,
+		 		autoArrows:    false,
+		 		cssArrows: false,
+		 		speedOut:      'normal',
+		 		delay:         200   
+			});
+		});
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function(e) {
+		    $('#menu').load('menu.html',function(){});
+		    
+		});
+</script>

@@ -35,6 +35,10 @@ h3 {
 	margin: 0 0 15px 0;
 	padding: 0;
 }
+h3 span {
+	color: #333;
+	font-weight: 100;
+}
 a {
 	color: #333;
 	outline: 0;
@@ -917,7 +921,11 @@ textarea {
 }
 
 
-#publicidad {
+/**********
+***PUBLICIDAD
+**********/
+
+#interes {
 	padding: 0px;
     margin: 0 140px;
 	
@@ -932,4 +940,14 @@ textarea {
 	float:left;
     padding: 0px 1px 20px 10px;
     margin: 0px;
+}
+
+/**********
+***GLOBALIFILICOS
+**********/
+
+.art-glob ul li{
+	float:none;
+	width: auto;
+		
 }
