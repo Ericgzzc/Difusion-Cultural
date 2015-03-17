@@ -68,7 +68,7 @@ a:focus {
 	background-position: center -301px;
 }
 .a-max {
-	background: url('../cursos/images/butons/document.png') no-repeat center #0050A2 ;
+	background: url('../images/butons/document.png') no-repeat center #0050A2 ;
 	color: #fff;
 	display: inline-block;
 	font-size: 1.7em;
@@ -686,7 +686,7 @@ textarea {
 .audiciones .audicion-cnt {
 	float: left;
 	height: 300px;	
-	margin-right: 45px;
+	margin-right: 30px;
 	position: relative;
 	width: 283px;
 }
@@ -767,10 +767,10 @@ textarea {
 	width: 135px;
 }
 .article ul li {
-	float: left;
-	margin-right: 50px;
-	padding: 3px 20px;
-	width: 220px;
+	 float: left;
+    margin-right: 50px;
+    padding: 3px 20px;
+    width: 250px;
 }
 
 .article ul li span {
@@ -982,4 +982,17 @@ textarea {
 }
 .glob-width{
 	width:75%;
+}
+
+.masinfo{
+	width: 100% !important;
+}
+
+.imagenes_home{
+	display: block;
+	overflow: hidden;
+
+}
+.inform{
+	padding-top:50px; 
 }
