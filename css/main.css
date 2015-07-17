@@ -47,6 +47,18 @@ a:focus {
 	color: #333;
 	outline: none;
 }
+
+.vmet {
+	background: url("../images/butons/play.png") no-repeat center 150px;
+	display: block;
+	width: 680px;
+	height: 380px;
+	position: absolute;
+}
+
+.vmet:hover {
+	background-position: center -341px;
+}
 .video_min {
 	background: url("../images/butons/play.png") no-repeat center 100px;
 	display: block;
@@ -54,6 +66,9 @@ a:focus {
 	height: 300px;
 	position: absolute;
 }
+
+
+
 .video_min:hover {
 	background-position: center -391px;
 }
@@ -805,7 +820,7 @@ textarea {
 	background: #DBDBDB;
 	margin: 0 auto;
 	padding: 20px;
-	width: 600px;
+	width: 615px;
 }
 .article ul.galeria li {
 	margin: 0 auto;
